@@ -1,39 +1,67 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# World Flags Quiz
+View website here
 
-Welcome,
+## Table of Content
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+1. [Project Goals](#project-goals)
+    1. [User Goals](#user-goals)
+    2. [Site Owner Goals](#site-owner-goals)
+2. [User Experience](#user-experience)
+    1. [Target Audience](#target-audience)
+    2. [User Requirements and Expectations](#user-requirements-and-expectations)
+    3. [User Stories](#user-stories)
+    4. [Site Owner Stories](#site-owner-stories)
+3. [Design](#design)
+    1. [Design Choices](#design-choices)
+    2. [Colour](#colours)
+    3. [Fonts](#fonts)
+    4. [Structure](#structure)
+    5. [Wireframes](#wireframes)
+4. [Features](#features)
+5. [Technologies Used](#technologies-used)
+    1. [Languages](#languages)
+    2. [Frameworks & Tools](#frameworks-&-tools)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+# Project Goals 
+The world flags quiz is a a classic flag guessing game to test users knowledge and a fun educational game to play!
+## User Goals 
+* Play a fun and engaging world flag guessing game. 
+* Test your knowledge by guessing the flags name. 
+## Site Owner Goals 
+* Create a fun and engaging game that users will want to play over and over again.
+* The quiz should be interactive and fully responsive to be able to be played on different devices.
 
-## Codeanywhere Reminders
+# User Experience 
+## Target Audience 
+* Students who need to test their knowledge.
+* People looking for a fun, quick game to play.
+* Anyone with an interest with flags and guessing games.
+## User Requirements and Expectations 
+* A simple, intuative navigation system.
+* Quick, easy, fun game to play.
+* Links and buttons to work as expected.
+* Accessibility 
+* Easy way to leave feedback 
+## User Stories 
+1. As a user, I want to test my knowledge on world flags.
+2. As a user, I want to see how many flags I have got correct and incorrect.
+3. As a user, I want to see how long I take guessing the flags.
+4. As a user, I want to receive feedback when I get an answer incorrect.
+## Site Owner Stories 
+1. As a site owner, I want users to be able to contact us and leave any feedback.
+2. As a site owner, I want users to find us on social media. 
+3. As a site owner, I want all users to be able to play the quiz easily.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+# Design 
+## Design Choices 
+The quiz was designed to have a simple and easy lay out. This is so users can focus on the actual game and flag without being distracted by any other elements on the page so they can fully focus. As well as, with a simple layout any user can play without diffuculties and are able to understand the game. 
+## Colour 
+## Fonts
+## Structure 
+## Wireframes 
 
-`python3 -m http.server`
+# Features 
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
-
-`http_server`
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
----
-
-Happy coding!
+# Technologies Used
+## Languages Used 
+## Frameworks Used
