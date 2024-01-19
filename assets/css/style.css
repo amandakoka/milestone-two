@@ -43,7 +43,26 @@ h2 {
     text-align: left;
     border-radius: 4px;
     cursor: pointer;
+    transition: all 0.3s;
 }
+
+.btn:hover{
+    background-color: #222;
+    color: #fff;
+}
+
+#nextbtn {
+    background-color: #fff;
+    width: 150px;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+
 
 footer {
     background-color:#D4D4D6;
