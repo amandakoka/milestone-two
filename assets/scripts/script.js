@@ -122,6 +122,16 @@ function showScore() {
 
     const finalScoreElement = document.getElementById("final-score");
     finalScoreElement.textContent = `Your final score: ${correctScore} correct and ${incorrectScore} incorrect`;
+    /**
+     * checks if the currentQuestionIndex is equal to or greater than the number of questions, indicating that the game is finished
+     * removes header when game is finished.
+     */
+    const headerElement = document.querySelector('.quiz h3');
+    if (currentQuestionIndex >= questions.length) {
+        headerElement.style.display = 'none';
+    } else {
+        headerElement.style.display = 'block';
+    }
 }
 
 function handleNextButton() {
