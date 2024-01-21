@@ -11,7 +11,10 @@
     height: 300px;
     padding-top: 0;
 }
-h1, h2 {
+body {
+    font-family: 'Lato', sans-serif;
+}
+h1, h2, h3 {
     text-align: center;
     padding-top: 5%;
 }
@@ -21,6 +24,9 @@ h1 {
 h2 {
     font-size: 30px;
     padding-bottom: 7%;
+}
+h3 {
+    font-size: 25px;
 }
 
 /*quiz styling*/ 
@@ -33,9 +39,9 @@ h2 {
     padding: 30px ;
 }
 img#question {
-    width: 80%;
+    width: 70%;
     padding-bottom: 7%;
-    padding-left: 10%;
+    padding-left: 15%;
     padding-top: 7%;
 }
 
@@ -74,6 +80,23 @@ img#question {
 }
 .incorrect {
     background-color: red;
+}
+/* score area styling*/
+.score-area {
+    text-align: center;
+    font-size: 1.2rem;
+}
+#score {
+    color: green;
+    font-weight: bold;
+}
+#incorrect {
+    color: red;
+    font-weight: bold;
+}
+.scores {
+    display: inline-block;
+    padding: 25px;
 }
 
 /*footer styling*/

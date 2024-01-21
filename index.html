@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--Google Fonts Link-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <!--Font awesome link-->
     <script src="https://kit.fontawesome.com/14a6ec3476.js" crossorigin="anonymous"></script>
     <title>World Flags Quiz</title>
@@ -14,6 +18,7 @@
         <h2>Can you guess the flag?</h2>
     </header>
     <div class="quiz">
+        <h3>Select the answer</h3>
         <img id="question" src="">
         <div id="answerbuttons">
             <button class ="btn"> Answer 1</button>
@@ -22,6 +27,10 @@
             <button class ="btn"> Answer 4</button>
         </div>
         <button id="nextbtn">Next</button>
+    </div>
+    <div class="score-area">
+        <p class="scores">Correct Answers <span id="score">0</span></p>
+        <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
     </div>
     <footer>
         <ul class="socials">
