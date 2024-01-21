@@ -113,13 +113,19 @@ function selectAnswer(e) {
 }
 
 
+
 function showScore() {
+    console.log("Final Score:", correctScore, incorrectScore);
     resetState();
     nextButton.innerHTML = "Play again!";
     nextButton.style.display = "block";
+
+    const finalScoreElement = document.getElementById("final-score");
+    finalScoreElement.textContent = `Your final score: ${correctScore} correct and ${incorrectScore} incorrect`;
 }
 
 function handleNextButton() {
+    console.log("Next Button Clicked");
     currentQuestionIndex++;
     if(currentQuestionIndex < questions.length){
         showQuestion();
@@ -128,7 +134,7 @@ function handleNextButton() {
     }
 }
 
-nextButton.addEventListener("click", ()=>{
+nextButton.addEventListener("click", () => {
     if(currentQuestionIndex < questions.length){
         handleNextButton();
     }else{
