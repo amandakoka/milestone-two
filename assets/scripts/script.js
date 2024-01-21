@@ -113,8 +113,6 @@ function selectAnswer(e) {
     nextButton.style.display = "block";
 }
 
-
-
 function showScore() {
     console.log("Final Score:", correctScore, incorrectScore);
     resetState();
