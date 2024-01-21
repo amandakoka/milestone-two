@@ -62,6 +62,7 @@ function startQuiz() {
     incorrectScore = 0;
     nextButton.innerHTML = "Next";
     showQuestion();
+    updateProgressBar();
 }
 
 function showQuestion() {
@@ -94,11 +95,11 @@ function resetState() {
 function selectAnswer(e) {
     const selectedBtn = e.target;
     const isCorrect = selectedBtn.dataset.correct === "true";
-    if(isCorrect){
+    if(isCorrect) {
         selectedBtn.classList.add("correct");
         correctScore++;
         correctScoreElement.textContent = correctScore;
-    }else{
+    }else {
         selectedBtn.classList.add("incorrect");
         incorrectScore++;
         incorrectScoreElement.textContent = incorrectScore;
@@ -133,13 +134,20 @@ function showScore() {
         headerElement.style.display = 'block';
     }
 }
+function updateProgressBar() {
+    const progressBar = document.getElementById("progress-bar");
+    const totalQuestions = questions.length;
+    const percentageComplete = (currentQuestionIndex / totalQuestions ) * 100;
+    progressBar.value = percentageComplete;  
+}
 
 function handleNextButton() {
     console.log("Next Button Clicked");
     currentQuestionIndex++;
-    if(currentQuestionIndex < questions.length){
+    if (currentQuestionIndex < questions.length) {
         showQuestion();
-    }else{
+        updateProgressBar(); 
+    } else {
         showScore();
     }
 }

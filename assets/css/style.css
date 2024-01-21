@@ -8,13 +8,14 @@
 .header {
     width: 100%;
     background-image: url("../img/background.png");
+    background-color: #D4D4D6;
     height: 300px;
     padding-top: 0;
 }
 body {
     font-family: 'Lato', sans-serif;
 }
-h1, h2, h3 {
+h1, h2, h3, p {
     text-align: center;
     padding-top: 5%;
 }
@@ -81,6 +82,16 @@ img#question {
 .incorrect {
     background-color: red;
 }
+/*progress bar styling*/
+#progress-container {
+    margin: 20px auto;
+    width: 50%; 
+}
+
+#progress-bar {
+    width: 100%;
+}
+
 /* score area styling*/
 .score-area {
     text-align: center;
