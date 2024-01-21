@@ -23,7 +23,7 @@ View website here
     2. [Frameworks & Tools](#frameworks-&-tools)
 
 # Project Goals 
-The world flags quiz is a a classic flag guessing game to test users knowledge and a fun educational game to play!
+The world flags quiz is a a classic flag guessing game to test users knowledge on flags and a fun educational game to play!
 ## User Goals 
 * Play a fun and engaging world flag guessing game. 
 * Test your knowledge by guessing the flags name. 
@@ -56,6 +56,8 @@ The world flags quiz is a a classic flag guessing game to test users knowledge a
 ## Design Choices 
 The quiz was designed to have a simple and easy lay out. This is so users can focus on the actual game and flag without being distracted by any other elements on the page so they can fully focus. As well as, with a simple layout any user can play without diffuculties and are able to understand the game. 
 ## Colour 
+I decided to base the colour scheme of my website off the photo I used as my header. 
+![img of grey map](documentation/background.png)
 ## Fonts
 ## Structure 
 ## Wireframes 
