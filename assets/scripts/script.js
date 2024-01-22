@@ -102,6 +102,9 @@ function showQuestion() {
 function resetState() {
     nextButton.style.display = "none";
     questionElement.src = ``;
+
+    messageContainer.textContent = ""; 
+    
     while(answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild);
     }
