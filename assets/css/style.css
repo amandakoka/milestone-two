@@ -11,6 +11,7 @@
     height: 300px;
     padding-top: 0;
     background-color: #D4D4D6;
+    text-align: center;
 }
 body {
     font-family: 'Lato', sans-serif;
@@ -130,7 +131,7 @@ footer {
     color: #222;
   }
 
-/*media querys*/
+/*media queries*/
 @media only screen and (max-width: 767px) {
 
     .header {
@@ -159,10 +160,10 @@ footer {
     }
 
     img#question {
-        width: 100%;
+        width: 80%;
         padding-bottom: 5%;
-        padding-left: 0;
-        padding-top: 5%;
+        padding-left: 10%;
+        padding-top: 2%;
     }
 
     #nextbtn {
