@@ -13,14 +13,26 @@ View website here
     4. [Site Owner Stories](#site-owner-stories)
 3. [Design](#design)
     1. [Design Choices](#design-choices)
-    2. [Colour](#colours)
-    3. [Fonts](#fonts)
-    4. [Structure](#structure)
-    5. [Wireframes](#wireframes)
+    2. [Images](#images)
+    3. [Colour](#colours)
+    4. [Fonts](#fonts)
+    5. [Structure](#structure)
+    6. [Wireframes](#wireframes)
 4. [Features](#features)
 5. [Technologies Used](#technologies-used)
     1. [Languages](#languages)
     2. [Frameworks & Tools](#frameworks-&-tools)
+6. [Testing](#testing)
+    1. [HTML Validation](#html-validaion) 
+    2. [CSS Validation](#css-validaion) 
+    3. [JavaScript Validation](#javascript-validaion) 
+    4. [Performance](#performance)  
+    5. [Device testing](#device-testing) 
+    6. [Browser testing](#browser-testing) 
+    7. [Testing user stories](#testing-user-stories) 
+7. [Bugs](#bugs) 
+8. [Deployment](#deployment)
+9. [Credits](#credits) 
 
 # Project Goals 
 The world flags quiz is a a classic flag guessing game to test users knowledge on flags and a fun educational game to play!
@@ -56,14 +68,56 @@ The world flags quiz is a a classic flag guessing game to test users knowledge o
 ## Design Choices 
 The quiz was designed to have a simple and easy lay out. This is so users can focus on the actual game and flag without being distracted by any other elements on the page so they can fully focus. As well as, with a simple layout any user can play without diffuculties and are able to understand the game. 
 ## Colour 
-I decided to base the colour scheme of my website off the photo I used as my header. 
-![img of grey map](documentation/background.png)
+The colour palette for this webiste was chosen to match the grey header image. A colour picker was used to pick a grey colour from the header image so it could be used for the website and so everything matches. I chose a simple clean layout and colours so the user can have an easy experience and so users aren't distracted by any colours on the page apart from the colours on the flag.
+![img of grey header map](documentation/background.png)
+![colour picker image](documentation/colourpicker.png)
+## Images 
+All images of flags were taken from freepik.com by the user rawpixel.com that I have credited in the credits section.
 ## Fonts
+I decided to keep a simple clean font to go with the simple clean theme of the game so I used one font throughout this game. I used the Lato font from google fonts because of its clean and simple look. 
 ## Structure 
+The website is structured in a user-friendly and easy-to-use way. Upon arriving at the website the user is shown the game and the user can play straight away. The webiste consists of 2 pages:
+- Homepage(the quiz)
+- Contact us page(where users can contact with any concerns/questions)
 ## Wireframes 
+* [Home page](documentation/wireframe.png)
+* [Contact us page](documentation/contactwireframe.png)
 
 # Features 
 
 # Technologies Used
+
 ## Languages Used 
+- HTML
+- CSS
+- JavaScript 
+
 ## Frameworks Used
+- Figma
+- Google Fonts
+- Font Awesome 
+- GitHub
+- Git
+
+# Testing
+### HTML Validation 
+### CSS Validation
+### JavaScript Validation
+### Performance 
+### Device testing
+### Browser testing
+### Testing user stories
+
+# Bugs 
+| **Bug** | **Fix** |
+| ----------- | ----------- |
+| [Button bug](documentation/buttonbug.png) | create a reset state function so the first 4 buttons arent shown |
+| [Image bug](documentation/imagebug.png)   | change my html so the question was an image instead of text |
+| Game scores and total score were still appearing when starting a new game | added restart quiz function and cleared the final score, correct and incorrect elements |
+| Content distorted in certain views | added media queries |
+| [Message Bug](documentation/messagebug.png) | message was still appearing when on the next question, so I added message container to reset state and it cleared |
+
+
+# Deployment
+
+# Credits 
