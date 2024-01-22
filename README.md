@@ -56,9 +56,10 @@ The world flags quiz is a a classic flag guessing game to test users knowledge o
 * Easy way to leave feedback 
 ## User Stories 
 1. As a user, I want to test my knowledge on world flags.
-2. As a user, I want to see how many flags I have got correct and incorrect.
-3. As a user, I want to see how long I take guessing the flags.
-4. As a user, I want to receive feedback when I get an answer incorrect.
+2. As a user, I want to know what the right flag is in case I dont pick correctly.
+3. As a user, I want to see how many flags I have got correct and incorrect.
+4. As a user, I want to see how long I take guessing the flags.
+5. As a user, I want to receive feedback when I get an answer correct or incorrect.
 ## Site Owner Stories 
 1. As a site owner, I want users to be able to contact us and leave any feedback.
 2. As a site owner, I want users to find us on social media. 
@@ -70,7 +71,7 @@ The quiz was designed to have a simple and easy lay out. This is so users can fo
 ## Colour 
 The colour palette for this webiste was chosen to match the grey header image. A colour picker was used to pick a grey colour from the header image so it could be used for the website and so everything matches. I chose a simple clean layout and colours so the user can have an easy experience and so users aren't distracted by any colours on the page apart from the colours on the flag.
 ![img of grey header map](documentation/background.png)
-![colour picker image](documentation/colourpicker.png)
+[Colour picker image](documentation/colourpicker.png)
 ## Images 
 All images of flags were taken from freepik.com by the user rawpixel.com that I have credited in the credits section.
 ## Fonts
@@ -86,18 +87,16 @@ The website is structured in a user-friendly and easy-to-use way. Upon arriving 
 # Features 
 
 # Technologies Used
-
 ## Languages Used 
 - HTML
 - CSS
 - JavaScript 
-
 ## Frameworks Used
-- Figma
-- Google Fonts
-- Font Awesome 
-- GitHub
-- Git
+- Figma was used to create wireframes.
+- Google Fonts was used for the fonts throughout the website.
+- Font Awesome was used for icons in the footer.
+- GitHub was used to store the project and code after being pushed from git.
+- Git used for version control and for commiting and pushing to GitHub.
 
 # Testing
 ### HTML Validation 
@@ -107,6 +106,47 @@ The website is structured in a user-friendly and easy-to-use way. Upon arriving 
 ### Device testing
 ### Browser testing
 ### Testing user stories
+1. As a user, I want to know what the right flag is in case I dont pick correctly.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|  |  |  |  |
+
+2. As a user, I want to see how many flags I have got correct and incorrect.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|  |  |  |  |
+
+3. As a user, I want to see how long I take guessing the flags.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|  |  | |  |
+
+4. As a user, I want to receive feedback when I get an answer correct or incorrect.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|  |  |  |  |
+
+5. As a site owner, I want users to be able to contact us and leave any feedback.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|  |  |  |  |
+
+6. As a site owner, I want users to be able to contact us and leave any feedback.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|  |  |  |  |
+
+7. As a site owner, I want users to find us on social media.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|  |  |  |  |
 
 # Bugs 
 | **Bug** | **Fix** |
@@ -116,7 +156,6 @@ The website is structured in a user-friendly and easy-to-use way. Upon arriving 
 | Game scores and total score were still appearing when starting a new game | added restart quiz function and cleared the final score, correct and incorrect elements |
 | Content distorted in certain views | added media queries |
 | [Message Bug](documentation/messagebug.png) | message was still appearing when on the next question, so I added message container to reset state and it cleared |
-
 
 # Deployment
 
