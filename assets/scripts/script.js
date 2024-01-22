@@ -51,6 +51,7 @@ const answerButtons = document.getElementById("answerbuttons");
 const nextButton = document.getElementById("nextbtn");
 const correctScoreElement = document.getElementById("score");
 const incorrectScoreElement = document.getElementById("incorrect");
+const messageContainer = document.getElementById("message-container");
 
 let currentQuestionIndex = 0;
 let correctScore = 0;
@@ -63,6 +64,8 @@ function restartQuiz() {
     showQuestion();
     updateProgressBar();
     nextButton.innerHTML = "Next";
+
+    messageContainer.textContent = "";
     
     const finalScoreElement = document.getElementById("final-score");
     finalScoreElement.textContent = "";
@@ -73,8 +76,6 @@ function restartQuiz() {
     const headerElement = document.querySelector('.quiz h3');
     headerElement.style.display = 'block';
 }
-
-
 
 function startQuiz() {
     restartQuiz();
@@ -98,7 +99,6 @@ function showQuestion() {
     });
 }
 
-
 function resetState() {
     nextButton.style.display = "none";
     questionElement.src = ``;
@@ -110,11 +110,14 @@ function resetState() {
 function selectAnswer(e) {
     const selectedBtn = e.target;
     const isCorrect = selectedBtn.dataset.correct === "true";
+    
     if(isCorrect) {
+        displayMessage("Correct!")
         selectedBtn.classList.add("correct");
         correctScore++;
         correctScoreElement.textContent = correctScore;
     }else {
+        displayMessage("Incorrect!")
         selectedBtn.classList.add("incorrect");
         incorrectScore++;
         incorrectScoreElement.textContent = incorrectScore;
@@ -126,6 +129,10 @@ function selectAnswer(e) {
         button.disabled = true;
     });
     nextButton.style.display = "block";
+}
+
+function displayMessage(message) {
+    messageContainer.textContent = message;
 }
 
 function showScore() {
@@ -147,11 +154,17 @@ function showScore() {
         headerElement.style.display = 'block';
     }
 }
+
 function updateProgressBar() {
     const progressBar = document.getElementById("progress-bar");
     const totalQuestions = questions.length;
-    const percentageComplete = (currentQuestionIndex / totalQuestions ) * 100;
-    progressBar.value = percentageComplete;  
+
+    if (currentQuestionIndex < totalQuestions) {
+        const percentageComplete = (currentQuestionIndex / totalQuestions) * 100;
+        progressBar.value = percentageComplete;  
+    } else {
+        progressBar.value = 100;
+    }
 }
 
 function handleNextButton() {

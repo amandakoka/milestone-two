@@ -31,6 +31,11 @@ h3 {
     font-size: 25px;
 }
 
+#message-container {
+    text-align: center;
+    font-size: 120%;
+}
+
 /*quiz styling*/ 
 .quiz {
     background-color: #D4D4D6;
