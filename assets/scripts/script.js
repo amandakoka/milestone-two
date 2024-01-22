@@ -56,13 +56,28 @@ let currentQuestionIndex = 0;
 let correctScore = 0;
 let incorrectScore = 0;
 
-function startQuiz() {
+function restartQuiz() {
     currentQuestionIndex = 0;
     correctScore = 0;
     incorrectScore = 0;
-    nextButton.innerHTML = "Next";
     showQuestion();
     updateProgressBar();
+    nextButton.innerHTML = "Next";
+    
+    const finalScoreElement = document.getElementById("final-score");
+    finalScoreElement.textContent = "";
+    
+    correctScoreElement.textContent = "0";
+    incorrectScoreElement.textContent = "0";
+    
+    const headerElement = document.querySelector('.quiz h3');
+    headerElement.style.display = 'block';
+}
+
+
+
+function startQuiz() {
+    restartQuiz();
 }
 
 function showQuestion() {
@@ -154,7 +169,7 @@ nextButton.addEventListener("click", () => {
     if(currentQuestionIndex < questions.length){
         handleNextButton();
     }else{
-        startQuiz();
+        restartQuiz();
     }
 })
 
