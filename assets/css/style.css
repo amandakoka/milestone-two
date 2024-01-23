@@ -3,7 +3,8 @@
     padding: 0;
     border: 0;
 }
-/* start screen styling*/
+
+/* Start Screen Styling */
 #start-screen {
     background-color: #D4D4D6;
     padding: 50px;
@@ -36,12 +37,11 @@
     color: #fff;
 }
 
-
 #quiz-container {
     display: none;
 }
 
-/*header styling*/
+/* Header Styling */
 .header {
     width: 100%;
     background-image: url("../img/background.png");
@@ -50,45 +50,52 @@
     background-color: #D4D4D6;
     text-align: center;
 }
+
 body {
     font-family: 'Lato', sans-serif;
 }
+
 h1, h2, h3, p {
     text-align: center;
     padding-top: 5%;
 }
+
 h1 {
     font-size: 50px;
 }
+
 h2 {
     font-size: 30px;
     padding-bottom: 7%;
 }
+
 h3 {
     font-size: 25px;
 }
 
-/*quiz styling*/ 
+/* Quiz Styling */
 .quiz {
     background-color: #D4D4D6;
     width: 90%;
     max-width: 600px;
     margin: 100px auto 100px;
     border-radius: 10px;
-    padding: 30px ;
+    padding: 30px;
 }
+
 img#question {
     width: 70%;
     padding-bottom: 7%;
     padding-left: 15%;
     padding-top: 7%;
 }
+
 #message-container {
     text-align: center;
     font-size: 120%;
 }
 
-/*button styling*/
+/* Button Styling */
 .btn {
     background-color: #fff;
     font-weight: 500;
@@ -101,13 +108,16 @@ img#question {
     cursor: pointer;
     transition: all 0.3s;
 }
-.btn:hover:not([disabled]){
+
+.btn:hover:not([disabled]) {
     background-color: #222;
     color: #fff;
 }
-.btn:disabled{
+
+.btn:disabled {
     cursor: no-drop;
 }
+
 #nextbtn {
     background-color: #fff;
     width: 150px;
@@ -118,54 +128,60 @@ img#question {
     cursor: pointer;
     display: none;
 }
+
 .correct {
     background-color: green;
 }
+
 .incorrect {
     background-color: red;
 }
-/*progress bar styling*/
+
+/* Progress Bar Styling */
 #progress-container {
     margin: 20px auto;
-    width: 50%; 
+    width: 50%;
 }
 
 #progress-bar {
     width: 100%;
 }
 
-/* score area styling*/
+/* Score Area Styling */
 .score-area {
     text-align: center;
     font-size: 1.2rem;
 }
+
 #score {
     color: green;
     font-weight: bold;
 }
+
 #incorrect {
     color: red;
     font-weight: bold;
 }
+
 .scores {
     display: inline-block;
     padding: 25px;
 }
 
-/*footer styling*/
+/* Footer Styling */
 footer {
-    background-color:#D4D4D6;
+    background-color: #D4D4D6;
 }
-  
+
 .socials {
     text-align: center;
 }
 
-.socials li{
+.socials li {
     display: inline;
 }
-  
-.socials i{
+
+.socials i {
     font-size: 200%;
     margin: 1%;
     padding: 3%;
@@ -181,34 +197,34 @@ a {
     color: #222;
 }
 
-/*contact us page*/
-  #formbg {
+/* Contact Us Page Styling */
+#formbg {
     padding-top: 10%;
     padding-bottom: 15%;
 }
 
-  form {
+form {
     display: flex;
     flex-direction: column;
     max-width: 60%;
     margin: auto;
 }
-  
-  form label, textarea, input {
-     margin-top: 10px;
+
+form label, textarea, input {
+    margin-top: 10px;
 }
-  
-  input, textarea {
+
+input, textarea {
     border: 1px solid #333333;
     border-radius: 4px;
     padding: 10px;
 }
 
-  .submit-btn,
-  #return {
+.submit-btn,
+#return {
     margin-top: 10px;
     padding: 10px;
-    background-color:#fafafa;
+    background-color: #fafafa;
     color: #000000;
     border: 1px solid #333333;
     border-radius: 4px;
@@ -216,24 +232,24 @@ a {
     margin-bottom: 10px;
 }
 
-
-/*media queries*/
+/* Media Queries */
 @media only screen and (max-width: 767px) {
+    /* Mobile Styles */
 
     #start-screen {
-        padding: 30px; 
-        margin: 150px auto 250px; 
-        max-width: 80%; 
+        padding: 30px;
+        margin: 150px auto 250px;
+        max-width: 80%;
     }
 
     #start-screen h1 {
-        font-size: 28px; 
+        font-size: 28px;
         margin-bottom: 15px;
     }
 
     #start-btn {
-        padding: 12px 24px;  
-        font-size: 16px; 
+        padding: 12px 24px;
+        font-size: 16px;
     }
 
     .header {
@@ -250,7 +266,7 @@ a {
     }
 
     p {
-        font-size: 25px; 
+        font-size: 25px;
         text-align: center;
         margin-bottom: 15px;
         margin-top: 20px;
@@ -288,39 +304,40 @@ a {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Tablet Styles */
 
     #start-screen {
-        padding: 40px; 
-        margin: 300px auto 350px; 
-        max-width: 70%; 
+        padding: 40px;
+        margin: 300px auto 350px;
+        max-width: 70%;
     }
 
     #start-screen h1 {
-        font-size: 32px; 
+        font-size: 32px;
         margin-bottom: 20px;
     }
 
     #start-btn {
-        padding: 15px 30px; 
-        font-size: 18px; 
+        padding: 15px 30px;
+        font-size: 18px;
     }
 
     .header {
-        height: 250px; 
+        height: 250px;
     }
 
     h1 {
-        font-size: 60px; 
+        font-size: 60px;
     }
 
     h2 {
-        font-size: 35px; 
+        font-size: 35px;
         padding-bottom: 7%;
     }
 
     h3 {
-        font-size: 30px; 
-        margin-bottom: 20px; 
+        font-size: 30px;
+        margin-bottom: 20px;
     }
 
     p {
@@ -328,29 +345,29 @@ a {
     }
 
     .quiz {
-        max-width: 800px; 
+        max-width: 800px;
     }
 
     img#question {
-        width: 80%; 
+        width: 80%;
         padding-bottom: 5%;
-        padding-left: 10%; 
+        padding-left: 10%;
         padding-top: 2%;
     }
 
     .btn {
-        font-size: 18px; 
-        padding: 12px; 
+        font-size: 18px;
+        padding: 12px;
     }
 
     #nextbtn {
-        width: 200px; 
-        font-size: 18px; 
+        width: 200px;
+        font-size: 18px;
         margin: 20px auto 0;
     }
 
     .socials i {
-        font-size: 180%; 
+        font-size: 180%;
         margin: 3%;
         padding: 3%;
     }

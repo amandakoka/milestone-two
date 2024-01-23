@@ -3,28 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- External stylesheet for styling -->
     <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!--Google Fonts Links-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <!--Google Fonts Link-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    
     <!--Font awesome link-->
     <script src="https://kit.fontawesome.com/14a6ec3476.js" crossorigin="anonymous"></script>
+    
+    <!-- Page title -->
     <title>World Flags Quiz</title>
 </head>
 <body>
+    
+    <!-- Header section -->
     <header class="header">
         <h1>World Flags Quiz</h1>
         <h2>Can you guess the flag?</h2>
     </header>
+
     <!-- Start Screen -->
     <div id="start-screen">
     <h1>Welcome to the World Flags Quiz</h1>
     <button id="start-btn">Start Quiz</button>
     </div>
+
     <!-- Quiz Content -->
     <div id="quiz-container">
         <div class="quiz">
+            <!-- Display question, answer buttons, and next button -->
             <h3>Select the answer</h3>
             <p id="final-score"></p>
             <img id="question" src="">
@@ -37,14 +48,20 @@
             <div id="message-container"></div>
             <button id="nextbtn">Next</button>
         </div>
+
+        <!-- Progress bar to indicate user's progress -->
         <div id="progress-container">
             <progress id="progress-bar" value="0" max="100"></progress>
         </div>
+
+        <!-- Score area displaying correct and incorrect answers -->
         <div class="score-area">
             <p class="scores">Correct Answers <span id="score">0</span></p>
             <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
         </div>
     </div>
+
+    <!-- Footer section with contact link and social media icons -->
     <footer>
         <div class="contact-us">
             <a href="contact.html">
@@ -55,8 +72,9 @@
             <li><a href="https://www.youtube.com" target="_blank" aria-label="youtube logo"><i class="fab fa-youtube-square" ></i></a></li>
             <li><a href="https://www.instagram.com" target="_blank" aria-label="instagram logo"><i class="fab fa-instagram"></i></a></li>
         </ul>
-
     </footer>
+
+    <!-- Script tag to include JavaScript file for quiz functionality -->
     <script src="assets/scripts/script.js"></script>
 </body>
 </html>
