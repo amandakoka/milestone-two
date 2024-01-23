@@ -90,6 +90,10 @@ img#question {
     padding-top: 7%;
 }
 
+p#final-score {
+    font-size: 180%;
+}
+
 #message-container {
     text-align: center;
     font-size: 120%;
