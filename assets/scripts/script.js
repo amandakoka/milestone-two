@@ -46,6 +46,9 @@ const questions = [
     }
 ];
 
+const startScreen = document.getElementById("start-screen");
+const startButton = document.getElementById("start-btn");
+const quizContainer = document.getElementById("quiz-container");
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answerbuttons");
 const nextButton = document.getElementById("nextbtn");
@@ -53,9 +56,26 @@ const correctScoreElement = document.getElementById("score");
 const incorrectScoreElement = document.getElementById("incorrect");
 const messageContainer = document.getElementById("message-container");
 
+
 let currentQuestionIndex = 0;
 let correctScore = 0;
 let incorrectScore = 0;
+
+function startQuiz() {
+    showStartScreen();
+}
+
+function showStartScreen() {
+    startScreen.style.display = "block";
+    quizContainer.style.display = "none";
+    startButton.addEventListener("click", startQuizContent);
+}
+
+function startQuizContent() {
+    startScreen.style.display = "none";
+    quizContainer.style.display = "block";
+    restartQuiz();
+}
 
 function restartQuiz() {
     currentQuestionIndex = 0;
@@ -75,10 +95,6 @@ function restartQuiz() {
     
     const headerElement = document.querySelector('.quiz h3');
     headerElement.style.display = 'block';
-}
-
-function startQuiz() {
-    restartQuiz();
 }
 
 function showQuestion() {
@@ -104,7 +120,7 @@ function resetState() {
     questionElement.src = ``;
 
     messageContainer.textContent = ""; 
-    
+
     while(answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild);
     }
