@@ -220,6 +220,22 @@ a {
 /*media queries*/
 @media only screen and (max-width: 767px) {
 
+    #start-screen {
+        padding: 30px; 
+        margin: 150px auto 250px; 
+        max-width: 80%; 
+    }
+
+    #start-screen h1 {
+        font-size: 28px; 
+        margin-bottom: 15px;
+    }
+
+    #start-btn {
+        padding: 12px 24px;  
+        font-size: 16px; 
+    }
+
     .header {
         height: 200px;
     }
@@ -272,6 +288,22 @@ a {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    #start-screen {
+        padding: 40px; 
+        margin: 300px auto 350px; 
+        max-width: 70%; 
+    }
+
+    #start-screen h1 {
+        font-size: 32px; 
+        margin-bottom: 20px;
+    }
+
+    #start-btn {
+        padding: 15px 30px; 
+        font-size: 18px; 
+    }
 
     .header {
         height: 250px; 
