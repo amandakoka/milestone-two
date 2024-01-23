@@ -17,25 +17,37 @@
         <h1>World Flags Quiz</h1>
         <h2>Can you guess the flag?</h2>
     </header>
-    <div class="quiz">
-        <h3>Select the answer</h3>
-        <p id="final-score"></p>
-        <img id="question" src="">
-        <div id="answerbuttons">
-            <button class ="btn"> Answer 1</button>
-            <button class ="btn"> Answer 2</button>
-            <button class ="btn"> Answer 3</button>
-            <button class ="btn"> Answer 4</button>
+    <!-- Start Screen -->
+    <div id="start-screen">
+        <h1>Welcome to the World Flags Quiz</h1>
+        <button id="start-btn">Play Now</button>
+    </div>
+    <!-- Quiz Content -->
+    <div id="quiz-container">
+        <header class="header">
+            <h1>World Flags Quiz</h1>
+            <h2>Can you guess the flag?</h2>
+        </header>
+        <div class="quiz">
+            <h3>Select the answer</h3>
+            <p id="final-score"></p>
+            <img id="question" src="">
+            <div id="answerbuttons">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+            <div id="message-container"></div>
+            <button id="nextbtn">Next</button>
         </div>
-        <div id="message-container"></div>
-        <button id="nextbtn">Next</button>
-    </div>
-    <div id="progress-container">
-        <progress id="progress-bar" value="0" max="100"></progress>
-    </div>
-    <div class="score-area">
-        <p class="scores">Correct Answers <span id="score">0</span></p>
-        <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
+        <div id="progress-container">
+            <progress id="progress-bar" value="0" max="100"></progress>
+        </div>
+        <div class="score-area">
+            <p class="scores">Correct Answers <span id="score">0</span></p>
+            <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
+        </div>
     </div>
     <footer>
         <div class="contact-us">
