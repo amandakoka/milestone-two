@@ -207,6 +207,11 @@ function showScore() {
 
     const finalScoreElement = document.getElementById("final-score");
     finalScoreElement.textContent = `Your final score: ${correctScore} correct and ${incorrectScore} incorrect`;
+    
+    // Update progress bar to 100 when showing the final score
+    const progressBar = document.getElementById("progress-bar");
+    progressBar.value = 100;
+
     // checks if the currentQuestionIndex is equal to or greater than the number of questions, indicating that the game is finished
     // removes header when game is finished.
     const headerElement = document.querySelector('.quiz h3');
@@ -228,8 +233,6 @@ function updateProgressBar() {
     if (currentQuestionIndex < totalQuestions) {
         const percentageComplete = (currentQuestionIndex / totalQuestions) * 100;
         progressBar.value = percentageComplete;  
-    } else {
-        progressBar.value = 100;
     }
 }
 
