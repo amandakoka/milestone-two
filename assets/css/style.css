@@ -137,6 +137,12 @@ img#question {
     background-color: red;
 }
 
+/* Timer Styling */
+p#timer {
+    padding-top: 0;
+    font-size: 180%;
+}
+
 /* Progress Bar Styling */
 #progress-container {
     margin: 20px auto;
