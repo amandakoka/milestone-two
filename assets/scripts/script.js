@@ -57,18 +57,24 @@ const nextButton = document.getElementById("nextbtn");
 const correctScoreElement = document.getElementById("score");
 const incorrectScoreElement = document.getElementById("incorrect");
 const messageContainer = document.getElementById("message-container");
+const timerContainer = document.getElementById("timer-container");
+const timerElement = document.getElementById("timer");
 
 // Quiz State Variables
 let currentQuestionIndex = 0;
 let correctScore = 0;
 let incorrectScore = 0;
+let timerSeconds = 0; 
+let timerInterval;
 
 /**
  * @function startQuiz
- * Initializes the quiz by showing the start screen.
+ * Initializes the quiz by showing the start screen and starting the timer.
  */
 function startQuiz() {
     showStartScreen();
+    // Event listener to transition to quiz content when "start quiz" button is clicked.
+    startButton.addEventListener("click", startQuizContent);
 }
 
 /**
@@ -90,12 +96,35 @@ function showStartScreen() {
 function startQuizContent() {
     startScreen.style.display = "none";
     quizContainer.style.display = "block";
+    
+    //Start the timer 
+    startTimer()
+
     restartQuiz();
 }
 
 /**
+ * @function startTimer
+ * Starts the timer.
+ */
+function startTimer() {
+    timerInterval = setInterval(() => {
+        timerSeconds++;
+        updateTimerDisplay();
+    }, 1000);
+}
+
+/**
+ * @function updateTimerDisplay
+ * Updates the timer display with the current elapsed time.
+ */
+function updateTimerDisplay() {
+    timerElement.textContent = `Time: ${timerSeconds}s`;
+}
+
+/**
  * @function restartQuiz
- * Resets quiz state and displays the first question.
+ * Resets quiz state, starts timer and displays the first question.
  */
 function restartQuiz() {
     currentQuestionIndex = 0;
@@ -197,13 +226,17 @@ function displayMessage(message) {
 
 /**
  * @function showScore
- * Displays the final score and controls the end-game behavior.
+ * Displays the final score, stops timer and controls the end-game behavior.
  */
 function showScore() {
     console.log("Final Score:", correctScore, incorrectScore);
     resetState();
     nextButton.innerHTML = "Play again!";
     nextButton.style.display = "block";
+
+    // Stop the timer
+    clearInterval(timerInterval);
+    updateTimerDisplay();
 
     const finalScoreElement = document.getElementById("final-score");
     finalScoreElement.textContent = `Your final score: ${correctScore} correct and ${incorrectScore} incorrect`;
@@ -212,8 +245,8 @@ function showScore() {
     const progressBar = document.getElementById("progress-bar");
     progressBar.value = 100;
 
-    // checks if the currentQuestionIndex is equal to or greater than the number of questions, indicating that the game is finished
-    // removes header when game is finished.
+    // Checks if the currentQuestionIndex is equal to or greater than the number of questions, indicating that the game is finished
+    // Removes header when game is finished.
     const headerElement = document.querySelector('.quiz h3');
     if (currentQuestionIndex >= questions.length) {
         headerElement.style.display = 'none';
@@ -260,5 +293,5 @@ nextButton.addEventListener("click", () => {
     }
 })
 
-// Call starQuiz function to initialise the start screen 
+// Call startQuiz function to initialise the start screen 
 startQuiz();
