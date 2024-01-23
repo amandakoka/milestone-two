@@ -1,3 +1,4 @@
+// Quiz questions array
 const questions = [
     {
         question: "assets/img/switzerland.png",
@@ -46,6 +47,7 @@ const questions = [
     }
 ];
 
+// DOM Elements 
 const startScreen = document.getElementById("start-screen");
 const startButton = document.getElementById("start-btn");
 const quizContainer = document.getElementById("quiz-container");
@@ -56,27 +58,45 @@ const correctScoreElement = document.getElementById("score");
 const incorrectScoreElement = document.getElementById("incorrect");
 const messageContainer = document.getElementById("message-container");
 
-
+// Quiz State Variables
 let currentQuestionIndex = 0;
 let correctScore = 0;
 let incorrectScore = 0;
 
+/**
+ * @function startQuiz
+ * Initializes the quiz by showing the start screen.
+ */
 function startQuiz() {
     showStartScreen();
 }
 
+/**
+ * @function showStartScreen
+ * Displays the start screen and sets up an event listener for the "Start Quiz" button.
+ */
 function showStartScreen() {
     startScreen.style.display = "block";
     quizContainer.style.display = "none";
+
+    //Event listener to transition to quiz content when "start quiz" button is clicked.
     startButton.addEventListener("click", startQuizContent);
 }
 
+/**
+ * @function startQuizContent
+ * Transitions from the start screen to the quiz content.
+ */
 function startQuizContent() {
     startScreen.style.display = "none";
     quizContainer.style.display = "block";
     restartQuiz();
 }
 
+/**
+ * @function restartQuiz
+ * Resets quiz state and displays the first question.
+ */
 function restartQuiz() {
     currentQuestionIndex = 0;
     correctScore = 0;
@@ -97,12 +117,17 @@ function restartQuiz() {
     headerElement.style.display = 'block';
 }
 
+/**
+ * @function showQuestion
+ * Displays the current question image and corrensponding answer buttons.
+ */
 function showQuestion() {
     resetState();
     let currentQuestion = questions[currentQuestionIndex];
     let questionNo = currentQuestionIndex + 1;
     questionElement.src = currentQuestion.question;
 
+    // Create buttons for each answer option and attach event listeners
     currentQuestion.answers.forEach(answer => {
         const button = document.createElement("button");
         button.innerHTML = answer.text;
@@ -115,6 +140,10 @@ function showQuestion() {
     });
 }
 
+/**
+ * @function resetState
+ * Resets the state of the quiz (e.g., clears previous question state).
+ */
 function resetState() {
     nextButton.style.display = "none";
     questionElement.src = ``;
@@ -126,6 +155,11 @@ function resetState() {
     }
 }
 
+/**
+ * @function selectAnswer
+ * Handles the user's answer selection, updates scores, and provides feedback.
+ * @param {Event} e - The click event object.
+ */
 function selectAnswer(e) {
     const selectedBtn = e.target;
     const isCorrect = selectedBtn.dataset.correct === "true";
@@ -141,19 +175,30 @@ function selectAnswer(e) {
         incorrectScore++;
         incorrectScoreElement.textContent = incorrectScore;
     }
+    // Disable all buttons after user selection
     Array.from(answerButtons.children).forEach(button => {
         if(button.dataset.correct === "true"){
             button.classList.add("correct");
         }
         button.disabled = true;
     });
+    // Display the "Next" button for the user to proceed
     nextButton.style.display = "block";
 }
 
+/**
+ * @function displayMessage
+ * Displays a message in the message container.
+ * @param {string} message - The message to be displayed.
+ */
 function displayMessage(message) {
     messageContainer.textContent = message;
 }
 
+/**
+ * @function showScore
+ * Displays the final score and controls the end-game behavior.
+ */
 function showScore() {
     console.log("Final Score:", correctScore, incorrectScore);
     resetState();
@@ -162,10 +207,8 @@ function showScore() {
 
     const finalScoreElement = document.getElementById("final-score");
     finalScoreElement.textContent = `Your final score: ${correctScore} correct and ${incorrectScore} incorrect`;
-    /**
-     * checks if the currentQuestionIndex is equal to or greater than the number of questions, indicating that the game is finished
-     * removes header when game is finished.
-     */
+    // checks if the currentQuestionIndex is equal to or greater than the number of questions, indicating that the game is finished
+    // removes header when game is finished.
     const headerElement = document.querySelector('.quiz h3');
     if (currentQuestionIndex >= questions.length) {
         headerElement.style.display = 'none';
@@ -174,6 +217,10 @@ function showScore() {
     }
 }
 
+/**
+ * @function updateProgressBar
+ * Updates the progress bar to reflect the user's progress through the quiz.
+ */
 function updateProgressBar() {
     const progressBar = document.getElementById("progress-bar");
     const totalQuestions = questions.length;
@@ -186,6 +233,10 @@ function updateProgressBar() {
     }
 }
 
+/**
+ * @function handleNextButton
+ * Handles the click event of the "Next" button, advancing to the next question or displaying the final score.
+ */
 function handleNextButton() {
     console.log("Next Button Clicked");
     currentQuestionIndex++;
@@ -197,6 +248,7 @@ function handleNextButton() {
     }
 }
 
+// Event Listener for Next Button
 nextButton.addEventListener("click", () => {
     if(currentQuestionIndex < questions.length){
         handleNextButton();
@@ -205,4 +257,5 @@ nextButton.addEventListener("click", () => {
     }
 })
 
+// Call starQuiz function to initialise the start screen 
 startQuiz();
