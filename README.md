@@ -69,15 +69,15 @@ The world flags quiz is a a classic flag guessing game to test users knowledge o
 ## Design Choices 
 The quiz was designed to have a simple and easy lay out. This is so users can focus on the actual game and flag without being distracted by any other elements on the page so they can fully focus. As well as, with a simple layout any user can play without diffuculties and are able to understand the game. 
 ## Colour 
-The colour palette for this webiste was chosen to match the grey header image. A colour picker was used to pick a grey colour from the header image so it could be used for the website and so everything matches. I chose a simple clean layout and colours so the user can have an easy experience and so users aren't distracted by any colours on the page apart from the colours on the flag.
+The colour palette for this webiste was chosen to match the grey header image. A colour picker was used to pick a grey colour from the header image so it could be used for the website and so everything matches. I chose a simple layout and colours so the user can have an easy experience and so users aren't distracted by any colours on the page apart from the colours on the flag.
 ![img of grey header map](documentation/background.png)
 [Colour picker image](documentation/colourpicker.png)
 ## Images 
 All images of flags were taken from freepik.com by the user rawpixel.com that I have credited in the credits section.
 ## Fonts
-I decided to keep a simple clean font to go with the simple clean theme of the game so I used one font throughout this game. I used the Lato font from google fonts because of its clean and simple look. 
+I decided to keep a clean font to go with the simple theme of the game so I used one font throughout this game. I used the Lato font from google fonts because of its clean and simple look. 
 ## Structure 
-The website is structured in a user-friendly and easy-to-use way. Upon arriving at the website the user is shown the game and the user can play straight away. The webiste consists of 2 pages:
+The website is structured in a user-friendly and easy-to-use way. Upon arriving at the website the user is shown a box stating welcome to the quiz and has a button to start the quiz. Once the user presses the play button quiz they are shown the actual quiz. The webiste consists of 2 pages:
 - Homepage(the quiz)
 - Contact us page(where users can contact with any concerns/questions)
 ## Wireframes 
@@ -130,19 +130,13 @@ The website is structured in a user-friendly and easy-to-use way. Upon arriving 
 |-------------|------------|---------------------|-------------------|
 |  |  |  |  |
 
-5. As a site owner, I want users to be able to contact us and leave any feedback.
+5.. As a site owner, I want users to be able to contact us and leave any feedback.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 |  |  |  |  |
 
-6. As a site owner, I want users to be able to contact us and leave any feedback.
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-|  |  |  |  |
-
-7. As a site owner, I want users to find us on social media.
+6. As a site owner, I want users to find us on social media.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -155,8 +149,9 @@ The website is structured in a user-friendly and easy-to-use way. Upon arriving 
 | [Image bug](documentation/imagebug.png)   | change my html so the question was an image instead of text |
 | Game scores and total score were still appearing when starting a new game | added restart quiz function and cleared the final score, correct and incorrect elements |
 | Content distorted in certain views | added media queries |
-| [Message Bug](documentation/messagebug.png) | message was still appearing when on the next question, so I added message container to reset state and it cleared |
-
+| [Message Bug](documentation/messagebug.png) | message was still appearing when on the next question, so I added "message container" to reset state and it cleared |
+| [Progress Bar Bug](documentation/progressbarbug.png) | the progress bar wasnt filling when the game finished, so I added to the show score function so the progress bar is 100 when showing the final score |
+| [Timer Bug](documentation/timerbug.png) | the timer was starting before the user presses start quiz, so I added a event listener so the timer starts when the user clicks the "Start Quiz" button.  
 # Deployment
 
 # Credits 
