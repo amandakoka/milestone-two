@@ -57,7 +57,7 @@ The world flags quiz is a a classic flag guessing game to test users knowledge o
 * Easy way to leave feedback 
 ## User Stories 
 1. As a user, I want to test my knowledge on world flags.
-2. As a user, I want to know what the right flag is in case I dont pick correctly.
+2. As a user, I want to know what the right flag is in case I don't pick correctly.
 3. As a user, I want to see how many flags I have got correct and incorrect.
 4. As a user, I want to see how long I take guessing the flags.
 5. As a user, I want to receive feedback when I get an answer correct or incorrect.
@@ -154,37 +154,77 @@ To do this:
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-|  |  |  |  |
+| Quiz buttons | Attempt to answer a question | Display the correct flag name if the answer is incorrect | Works as expected. The correct flag lights up in green even if you pick the incorrect answer |
+
+<details>
+<summary>Screenshots</summary>
+<br>
+<img src"documentation/testing-user-stories/userstory1.png">
+</details>
 
 2. As a user, I want to see how many flags I have got correct and incorrect.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-|  |  |  |  |
+| Incorrect and correct scores | Answer quiz questions | Display real-time updates of correct and incorrect scores | Works as expected. Incorrect scores and correct scores are shown going through the quiz |
+
+<details>
+<summary>Screenshots</summary>
+<br>
+<img src"documentation/testing-user-stories/userstory2.png">
+</details>
 
 3. As a user, I want to see how long I take guessing the flags.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-|  |  | |  |
+| Timer | Answer quiz questions | Display the time taken to complete the quiz | Works as expected. Timer runs during the flag quiz and stops at the end so the user can see how long they took |
+
+<details>
+<summary>Screenshots</summary>
+<br>
+<img src"documentation/testing-user-stories/userstory3.png">
+</details>
 
 4. As a user, I want to receive feedback when I get an answer correct or incorrect.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-|  |  |  |  |
+| Message Container | Answer quiz questions | Display feedback messages based on correctness of the answers | Works as expected. When the use clicks their answer they either get a message or "correct!" or "incorrect". |
+
+<details>
+<summary>Screenshots</summary>
+<br>
+<img src"documentation/testing-user-stories/userstory4.png">
+<img src"documentation/testing-user-stories/userstoryy4.png">
+</details>
 
 5.. As a site owner, I want users to be able to contact us and leave any feedback.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-|  |  |  |  |
+| Contact Form | Submit a message through the form | Receive an email notification or confirmation upon successful submission | Works as expected. Users can successfully send an email and the site-owner receives that email. |
+
+<details>
+<summary>Screenshots</summary>
+<br>
+<img src"documentation/testing-user-stories/userstory5.png">
+<img src"documentation/testing-user-stories/userstoryy5.png">
+<img src"documentation/testing-user-stories/userstoryyy5.png">
+</details>
 
 6. As a site owner, I want users to find us on social media.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-|  |  |  |  |
+| Social Media Links | Click on social media icons | Redirect to respective social media profiles or pages | Works as expected. When social media links are clicked it takes you to the page. |
+
+<details>
+<summary>Screenshots</summary>
+<br>
+<img src"documentation/testing-user-stories/userstory6.png">
+<img src"documentation/testing-user-stories/userstoryy6.png">
+</details>
 
 # Bugs 
 | **Bug** | **Fix** |
