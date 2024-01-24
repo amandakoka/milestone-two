@@ -263,11 +263,11 @@ You can fork the World flags Quiz repositry by following these steps:
 
 You can clone the repositry by following these steps:
 
-1.Log in or signup to Github.
-2.Find the repository for this website, autismawareness.
-3.Click on the code button and select whether you would like to clone with HTTPS,SSH or Github CLI and copy the link shown.
-4.Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
-5.Type 'git clone' into the terminal, then paste the link you copied in step 3 and Press enter.
+1. Log in or signup to Github.
+2. Find the repository for this website, autismawareness.
+3. Click on the code button and select whether you would like to clone with HTTPS,SSH or Github CLI and copy the link shown.
+4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
+5. Type 'git clone' into the terminal, then paste the link you copied in step 3 and Press enter.
 
 # Credits 
 
