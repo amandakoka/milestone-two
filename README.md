@@ -21,7 +21,7 @@
 4. [Features](#features)
 5. [Technologies Used](#technologies-used)
     1. [Languages](#languages)
-    2. [Frameworks & Tools](#frameworks-&-tools)
+    2. [Frameworks & Tools](#frameworks--tools)
     3. [EmailJS](#emailjs)
 6. [Testing](#testing)
     1. [HTML Validation](#html-validaion) 
@@ -50,7 +50,7 @@ The world flags quiz is a a classic flag guessing game to test users knowledge o
 * People looking for a fun, quick game to play.
 * Anyone with an interest with flags and guessing games.
 ## User Requirements and Expectations 
-* A simple, intuative navigation system.
+* A simple, intuitive navigation system.
 * Quick, easy, fun game to play.
 * Links and buttons to work as expected.
 * Accessibility 
@@ -144,11 +144,17 @@ To do this:
 
 # Testing
 ### HTML Validation 
+
 ### CSS Validation
+
 ### JavaScript Validation
+
 ### Performance 
+
 ### Device testing
+
 ### Browser testing
+
 ### Testing user stories
 1. As a user, I want to know what the right flag is in case I dont pick correctly.
 
@@ -159,7 +165,7 @@ To do this:
 <details>
 <summary>Screenshots</summary>
 <br>
-<img src"documentation/testing-user-stories/userstory1.png">
+<img src="documentation/testing-user-stories/userstory1.png">
 </details>
 
 2. As a user, I want to see how many flags I have got correct and incorrect.
@@ -171,7 +177,7 @@ To do this:
 <details>
 <summary>Screenshots</summary>
 <br>
-<img src"documentation/testing-user-stories/userstory2.png">
+<img src="documentation/testing-user-stories/userstory2.png">
 </details>
 
 3. As a user, I want to see how long I take guessing the flags.
@@ -183,7 +189,7 @@ To do this:
 <details>
 <summary>Screenshots</summary>
 <br>
-<img src"documentation/testing-user-stories/userstory3.png">
+<img src="documentation/testing-user-stories/userstory3.png">
 </details>
 
 4. As a user, I want to receive feedback when I get an answer correct or incorrect.
@@ -195,8 +201,8 @@ To do this:
 <details>
 <summary>Screenshots</summary>
 <br>
-<img src"documentation/testing-user-stories/userstory4.png">
-<img src"documentation/testing-user-stories/userstoryy4.png">
+<img src="documentation/testing-user-stories/userstory4.png">
+<img src="documentation/testing-user-stories/userstoryy4.png">
 </details>
 
 5.. As a site owner, I want users to be able to contact us and leave any feedback.
@@ -208,9 +214,9 @@ To do this:
 <details>
 <summary>Screenshots</summary>
 <br>
-<img src"documentation/testing-user-stories/userstory5.png">
-<img src"documentation/testing-user-stories/userstoryy5.png">
-<img src"documentation/testing-user-stories/userstoryyy5.png">
+<img src="documentation/testing-user-stories/userstory5.png">
+<img src="documentation/testing-user-stories/userstoryy5.png">
+<img src="documentation/testing-user-stories/userstoryyy5.png">
 </details>
 
 6. As a site owner, I want users to find us on social media.
@@ -222,8 +228,8 @@ To do this:
 <details>
 <summary>Screenshots</summary>
 <br>
-<img src"documentation/testing-user-stories/userstory6.png">
-<img src"documentation/testing-user-stories/userstoryy6.png">
+<img src="documentation/testing-user-stories/userstory6.png">
+<img src="documentation/testing-user-stories/userstoryy6.png">
 </details>
 
 # Bugs 
