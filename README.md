@@ -233,14 +233,12 @@ You can clone the repositry by following these steps:
 
 ## Media 
 - All images of flags were used from the freepik website by [rawpixel.com](https://www.freepik.com/search?author=2199844&authorSlug=rawpixel.com&format=author&query=flags)
-<a href="https://www.freepik.com/free-vector/illustration-uk-flag_2807791.htm#query=flags&position=0&from_view=author&uuid=063cb6e6-0ed9-4f48-bd6e-dc8b1aca686f">Image by rawpixel.com</a> on Freepik
-- My header image was also used from the same place.
-<a href="https://www.freepik.com/free-vector/worldwide-connection-gray-background-illustration_3525480.htm#query=grey%20map&position=24&from_view=search&track=ais&uuid=e1233345-ec0f-4ffa-9e06-b9288ed4ddeb">Image by rawpixel.com</a> on Freepik
+  - [Image by rawpixel.com on Freepik](https://www.freepik.com/free-vector/illustration-uk-flag_2807791.htm#query=flags&position=0&from_view=author&uuid=063cb6e6-0ed9-4f48-bd6e-dc8b1aca686f)
+  - [Image by rawpixel.com on Freepik](https://www.freepik.com/free-vector/worldwide-connection-gray-background-illustration_3525480.htm#query=grey%20map&position=24&from_view=search&track=ais&uuid=e1233345-ec0f-4ffa-9e06-b9288ed4ddeb)
 
 ## Code 
-- The score area HTML,CSS+JS code was written with the help of Code Institutes Love Maths project
-- The footer HTML+CSS code was reused from my [previous project](https://github.com/amandakoka/autismawareness) and changed to fit this website.
-- The contact form HTML+CSS was resued from my [previous project](https://github.com/amandakoka/autismawareness)and changed to fit this websites purpose.
-- The contact forms JS code was written with the help of the [EmailJs tutorials](https://www.emailjs.com/docs/tutorial/creating-contact-form/) and a [youtube tutorial.](https://youtu.be/qxWDVRyc95E?si=rJUAMLa7AzZuczgo)
-
+- The score area HTML, CSS, and JS code were written with the help of Code Institute's Love Maths project.
+- The footer HTML and CSS code were reused and modified from my [previous project](https://github.com/amandakoka/autismawareness).
+- The contact form HTML and CSS were reused and modified from my [previous project](https://github.com/amandakoka/autismawareness).
+- The contact form's JS code was written with the help of the [EmailJs tutorials](https://www.emailjs.com/docs/tutorial/creating-contact-form/) and a [YouTube tutorial](https://youtu.be/qxWDVRyc95E?si=rJUAMLa7AzZuczgo).
 
