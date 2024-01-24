@@ -152,6 +152,39 @@ The website is structured in a user-friendly and easy-to-use way. Upon arriving 
 | [Message Bug](documentation/messagebug.png) The message was still appearing when moving to the next question. The message container was not properly reset during the transition to the next question. | Included the "message container" in the reset state function to clear any existing messages, preventing them from carrying over to the next question. |
 | [Progress Bar Bug](documentation/progressbarbug.png) The progress bar wasn't filling when the game finished. The progress bar was not updated to 100% when displaying the final score. | Modified the show score function to set the progress bar to 100% when showing the final score, ensuring that the progress bar accurately reflects completion. |
 | [Timer Bug](documentation/timerbug.png) The timer was starting before the user pressed the "Start Quiz" button. The timer interval was not properly controlled, leading to premature initiation. | Added an event listener to start the timer only when the user clicks the "Start Quiz" button, preventing the timer from starting unintentionally.  
+
 # Deployment
+The World Flags Quiz project is deployed on GitHub Pages, providing a convenient way to showcase and access the quiz online. The following steps outline the deployment process:
+
+### GitHub Repository:
+The project is stored in a GitHub repository, ensuring version control and collaboration.
+### GitHub Pages:
+GitHub Pages is utilized for hosting the live version of the World Flags Quiz.
+Navigate to the "Settings" tab in the GitHub repository.
+### Source Branch:
+In the "Settings" tab, scroll down to the "GitHub Pages" section.
+Choose main from the branch menu. Select root from the folder menu and save. GitHub Pages will deploy the site.
+### Deployment:
+After selecting the source branch, GitHub Pages will provide the URL where the live site is accessible.
+### Live Site URL:
+The live version of the World Flags Quiz can be accessed at Your GitHub Pages URL.
+
+## Local Deployment
+You can fork the World flags Quiz repositry by following these steps:
+
+1. Log in or signup to Github.
+2. Find the repository for this website.
+3. Click the fork button in the top right corner.
+
+You can clone the repositry by following these steps:
+
+1.Log in or signup to Github.
+2.Find the repository for this website, autismawareness.
+3.Click on the code button and select whether you would like to clone with HTTPS,SSH or Github CLI and copy the link shown.
+4.Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
+5.Type 'git clone' into the terminal, then paste the link you copied in step 3 and Press enter.
 
 # Credits 
+
+## Media 
+## Code 
