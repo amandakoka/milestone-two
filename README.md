@@ -22,6 +22,7 @@
 5. [Technologies Used](#technologies-used)
     1. [Languages](#languages)
     2. [Frameworks & Tools](#frameworks-&-tools)
+    3. [EmailJS](#emailjs)
 6. [Testing](#testing)
     1. [HTML Validation](#html-validaion) 
     2. [CSS Validation](#css-validaion) 
@@ -114,16 +115,32 @@ Social media icons in the footer provide users with direct links to the site own
 The quiz is designed to be fully responsive, ensuring an optimal experience across various devices and screen sizes.
 
 # Technologies Used
-## Languages Used 
-- HTML
-- CSS
-- JavaScript 
-## Frameworks Used
-- Figma was used to create wireframes.
-- Google Fonts was used for the fonts throughout the website.
-- Font Awesome was used for icons in the footer.
-- GitHub was used to store the project and code after being pushed from git.
-- Git used for version control and for commiting and pushing to GitHub.
+## Languages  
+- HTML: Used for structuring the content and creating the foundation of the web pages.
+- CSS: Applied for styling and layout, ensuring a visually cohesive and responsive design.
+- JavaScript: Implemented for interactive features and enhancing the user experience.
+## Frameworks & Tools
+- Figma: Utilized for creating wireframes, providing a visual representation of the website's layout and design.
+- Google Fonts: Integrated to enhance the typography, offering a diverse range of fonts to elevate the visual aesthetics of the content.
+- Font Awesome: Incorporated for the inclusion of icons in the footer, contributing to a more visually appealing and informative user interface.
+- GitHub: Employed as a version control system and a collaborative platform for storing and managing the project's source code
+- Git: Utilized for version control, allowing seamless collaboration, tracking changes, and ensuring a well-documented development process. Commits and pushes to GitHub provide a clear history of project evolution.
+- EmailJS: Integrated for handling form submissions and facilitating email communication from the website.
+## EmailJS
+I used EmailJS which allows users to send emails. 
+To do this:
+1. Sign Up for EmailJS:
+- Visit the EmailJS website and sign up for an account.
+2. Create a New Email Service:
+- After signing up, log in to your EmailJS account.
+- Create a new email service, and note the Service ID.
+3. Create an Email Template:
+- Create an email template within the service, specifying the template content and structure.
+- Note the Template ID.
+4. Get Your Public Key:
+- Retrieve your EmailJS public key from your account settings.
+5. Include EmailJS Library in Your Project:
+- Add the EmailJS library to your HTML file by including the following script tag in the head section
 
 # Testing
 ### HTML Validation 
