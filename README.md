@@ -145,13 +145,13 @@ The website is structured in a user-friendly and easy-to-use way. Upon arriving 
 # Bugs 
 | **Bug** | **Fix** |
 | ----------- | ----------- |
-| [Button bug](documentation/buttonbug.png) | create a reset state function so the first 4 buttons arent shown |
-| [Image bug](documentation/imagebug.png)   | change my html so the question was an image instead of text |
-| Game scores and total score were still appearing when starting a new game | added restart quiz function and cleared the final score, correct and incorrect elements |
-| Content distorted in certain views | added media queries |
-| [Message Bug](documentation/messagebug.png) | message was still appearing when on the next question, so I added "message container" to reset state and it cleared |
-| [Progress Bar Bug](documentation/progressbarbug.png) | the progress bar wasnt filling when the game finished, so I added to the show score function so the progress bar is 100 when showing the final score |
-| [Timer Bug](documentation/timerbug.png) | the timer was starting before the user presses start quiz, so I added a event listener so the timer starts when the user clicks the "Start Quiz" button.  
+| [Button bug](documentation/buttonbug.png) After starting a new game, the first four answer buttons were still visible. This occurred because the state was not properly reset after starting a new game.| Implemented a reset state function to ensure that the initial state is properly cleared, including the visibility of answer buttons. |
+| [Image bug](documentation/imagebug.png) The question was displaying as text instead of an image. The HTML structure needed modification to ensure that the question is rendered as an image.  | Updated the HTML code to correctly include image elements, resolving the issue of text display and ensuring that questions are consistently presented as images. |
+| Game scores and total score were still appearing when starting a new game. This occurred because the final score, correct, and incorrect elements were not being cleared after starting a new game. | Added a restart quiz function to reset the necessary elements, including the final score, correct, and incorrect elements, ensuring a clean start for each new game. |
+| Content distorted in certain views. The content was distorted in certain views, affecting the visual layout. This distortion occurred due to the lack of responsive design elements, causing elements to display improperly on smaller screens or specific resolutions. | Implemented media queries in the CSS to apply specific styling adjustments based on screen size. This ensured that the content layout adapts appropriately to different devices, preventing distortion and maintaining a visually appealing presentation. |
+| [Message Bug](documentation/messagebug.png) The message was still appearing when moving to the next question. The message container was not properly reset during the transition to the next question. | Included the "message container" in the reset state function to clear any existing messages, preventing them from carrying over to the next question. |
+| [Progress Bar Bug](documentation/progressbarbug.png) The progress bar wasn't filling when the game finished. The progress bar was not updated to 100% when displaying the final score. | Modified the show score function to set the progress bar to 100% when showing the final score, ensuring that the progress bar accurately reflects completion. |
+| [Timer Bug](documentation/timerbug.png) The timer was starting before the user pressed the "Start Quiz" button. The timer interval was not properly controlled, leading to premature initiation. | Added an event listener to start the timer only when the user clicks the "Start Quiz" button, preventing the timer from starting unintentionally.  
 # Deployment
 
 # Credits 
