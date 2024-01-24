@@ -127,7 +127,6 @@ function updateTimerDisplay() {
  * Resets quiz state, starts timer and displays the first question.
  */
 function restartQuiz() {
-    console.log("Restarting quiz...");
     currentQuestionIndex = 0;
     correctScore = 0;
     incorrectScore = 0;
@@ -137,7 +136,6 @@ function restartQuiz() {
     // Call startTimer to initiate a new timer
     startTimer();
 
-    console.log("Quiz restarted!");
     showQuestion();
     updateProgressBar();
     nextButton.innerHTML = "Next";
