@@ -144,8 +144,33 @@ To do this:
 
 # Testing
 ### HTML Validation 
+The W3C validator was used to validate the HTML on all pages.
+
+#### First Validation Test:
+- **Home Page:**
+  - Initial Validation: [Before Fix](documentation/html-validation/initial-html.png)
+  - Issue: Missing image source and alt text.
+  - Fix: Added a source to the image and included alt text.
+
+- **Contact Page:**
+  - Initial Validation: [Before Fix](documentation/html-validation/contact-html-val.png)
+    - Issue 1: Unnecessary style attribute in the emailjs tag.
+    - Issue 2: The 'a' element cannot be a descendant of a 'button' element.
+  - Fix: Removed the style attribute and changed the button to a div element.
+
+#### Final Validation Test:
+- **Home Page:**
+  - [After Fix](documentation/html-validation/html.png)
+
+- **Contact Page:**
+  - [After Fix](documentation/html-validation/contact-val-html2.png)
 
 ### CSS Validation
+
+The W3C Jigsaw CSS validator was used to validate the CSS of the website. Both tests passed with no errors.
+
+- [Full Page](documentation/css-validation/cssvalwebsite.png) 
+- [Style.css File](documentation/css-validation/cssvalfile.png)
 
 ### JavaScript Validation
 
