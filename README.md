@@ -89,8 +89,8 @@ The website is structured in a user-friendly and easy-to-use way and designed wi
 - The contact form enables easy communication and provides users with a platform to leave feedback.
 
 ## Wireframes 
-* [Home page](documentation/wireframe.png)
-* [Contact us page](documentation/contactwireframe.png)
+* [Home page](documentation/wireframes/wireframe.png)
+* [Contact us page](documentation/wireframes/contactwireframe.png)
 
 # Features 
 ### Start Screen
