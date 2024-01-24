@@ -188,6 +188,9 @@ function resetState() {
     while(answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild);
     }
+
+    // Ensure the image element is displayed
+    questionElement.style.display = "block";
 }
 
 /**
@@ -250,6 +253,9 @@ function showScore() {
     // Update progress bar to 100 when showing the final score
     const progressBar = document.getElementById("progress-bar");
     progressBar.value = 100;
+    
+    // Hide question image element
+    questionElement.style.display = "none";
 
     // Checks if the currentQuestionIndex is equal to or greater than the number of questions, indicating that the game is finished
     // Removes header when game is finished.
