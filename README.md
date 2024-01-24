@@ -1,5 +1,5 @@
 # World Flags Quiz
-View website here
+[View website here](https://amandakoka.github.io/milestone-two/)
 
 ## Table of Content
 
@@ -67,19 +67,26 @@ The world flags quiz is a a classic flag guessing game to test users knowledge o
 
 # Design 
 ## Design Choices 
-The quiz was designed to have a simple and easy lay out. This is so users can focus on the actual game and flag without being distracted by any other elements on the page so they can fully focus. As well as, with a simple layout any user can play without diffuculties and are able to understand the game. 
+The World Flags quiz prioritizes a simple and clean layout to ensure users can immerse themselves in the quiz without unnecessary distractions. The primary goal is to create an engaging environment where users can focus on the challenge of identifying flags. By using a straightforward design, users can navigate effortlessly and concentrate on the quiz content. This design promotes accessibility and inclusivity, allowing a diverse audience to enjoy the game without complications.
 ## Colour 
-The colour palette for this webiste was chosen to match the grey header image. A colour picker was used to pick a grey colour from the header image so it could be used for the website and so everything matches. I chose a simple layout and colours so the user can have an easy experience and so users aren't distracted by any colours on the page apart from the colours on the flag.
-![img of grey header map](documentation/background.png)
-[Colour picker image](documentation/colourpicker.png)
+The color palette for the website was carefully chosen to coordinate with the grey header image. To maintain visual coherence, a color picker tool was employed to extract a suitable grey shade from the header image. This approach makes sure that the colors blend smoothly across the entire website.The deliberate use of a simple color scheme aims to facilitate a smooth user experience, minimizing potential distractions and enabling users to concentrate on the vibrant colors of the flags displayed in the quiz.
+- [Header Image](documentation/background.png)
+- [Colour picker image](documentation/colourpicker.png)
 ## Images 
-All images of flags were taken from freepik.com by the user rawpixel.com that I have credited in the credits section.
+All flag images used in the World Flags Quiz are from freepik.com by rawpixel.com. Proper credit has been attributed to rawpixel.com in the "Credits" section. These images not only contribute to the visual appeal of the quiz but also align with its educational and engaging nature. They enhance the overall aesthetic, allowing users to explore and identify flags from around the world, thereby enriching the quiz experience.
 ## Fonts
-I decided to keep a clean font to go with the simple theme of the game so I used one font throughout this game. I used the Lato font from google fonts because of its clean and simple look. 
+Choosing the right font is important to maintaining the overall simplicity and cleanliness of the design. I opted for the Lato font from Google Fonts for its clean and modern aesthetic. This font enhances the readability of the quiz content, ensuring that users can easily comprehend text instructions, flag names, and any additional information provided during the quiz.
 ## Structure 
-The website is structured in a user-friendly and easy-to-use way. Upon arriving at the website the user is shown a box stating welcome to the quiz and has a button to start the quiz. Once the user presses the play button quiz they are shown the actual quiz. The webiste consists of 2 pages:
-- Homepage(the quiz)
-- Contact us page(where users can contact with any concerns/questions)
+The website is structured in a user-friendly and easy-to-use way and designed with a simple and clean layout to ensure an immersive, distraction-free experience. The webiste consists of 2 pages:
+
+1. Homepage(The Quiz):
+- Upon entering the website, users are greeted with a welcome message and a "Start Quiz" button.
+- Clicking the "Start Quiz" button leads users to the actual quiz, where there's a series of flag images to identify.
+- The layout prioritizes ease of navigation, allowing users to focus on the challenge of guessing flags.
+2. Contact us page(where users can contact with any concerns/questions)
+- A separate "Contact Us" page is available for users to reach out with concerns or questions located in the footer.
+- The contact form enables easy communication and provides users with a platform to leave feedback.
+
 ## Wireframes 
 * [Home page](documentation/wireframe.png)
 * [Contact us page](documentation/contactwireframe.png)
