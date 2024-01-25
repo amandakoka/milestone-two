@@ -223,7 +223,7 @@ The website was testes on the following browsers:
 | **Bug** | **Fix** |
 | ----------- | ----------- |
 |[Button Text Bug](documentation/bugs/button-text-bug.png) 
-In mobile and tablet view the text in the quiz buttons were blue in all browsers I tested | Added a css style to the text in the buttons so they were black. |
+In mobile and tablet view the text in the quiz buttons and the next button were blue in all browsers I tested | Added a css style to the text in the buttons so they were black. |
 
 ### Testing user stories
 1. As a user, I want to know what the right flag is in case I dont pick correctly.
