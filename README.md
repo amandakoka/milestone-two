@@ -413,9 +413,18 @@ You can clone the repository by following these steps:
 # Credits 
 
 ## Media 
-- All images of flags were used from the freepik website by [rawpixel.com](https://www.freepik.com/search?author=2199844&authorSlug=rawpixel.com&format=author&query=flags)
-  - [Image by rawpixel.com on Freepik](https://www.freepik.com/free-vector/illustration-uk-flag_2807791.htm#query=flags&position=0&from_view=author&uuid=063cb6e6-0ed9-4f48-bd6e-dc8b1aca686f)
-  - [Image by rawpixel.com on Freepik](https://www.freepik.com/free-vector/worldwide-connection-gray-background-illustration_3525480.htm#query=grey%20map&position=24&from_view=search&track=ais&uuid=e1233345-ec0f-4ffa-9e06-b9288ed4ddeb)
+All images of flags were sourced from the Freepik website and created by [rawpixel.com](https://www.freepik.com/search?author=2199844&authorSlug=rawpixel.com&format=author&query=flags).
+
+- [Illustration: Portugal Flag](https://www.freepik.com/free-vector/illustration-portugal-flag_2807795.htm#query=flag&position=23&from_view=author&uuid=f3077a91-7aba-4618-a5cf-4b75c1b86f08) by rawpixel.com on Freepik
+- [Illustration: France Flag](https://www.freepik.com/free-vector/illustration-france-flag_2922485.htm#query=flags&position=1&from_view=author&uuid=35b95d32-8225-4062-8c5f-f2225695b948) by rawpixel.com on Freepik
+- [Illustration: Denmark Flag](https://www.freepik.com/free-vector/illustration-denmark-flag_2922490.htm#query=flags&position=4&from_view=author&uuid=35b95d32-8225-4062-8c5f-f2225695b948) by rawpixel.com on Freepik
+- [Illustration: Sweden Flag](https://www.freepik.com/free-vector/illustration-sweden-flag_2922488.htm#query=flags&position=11&from_view=author&uuid=35b95d32-8225-4062-8c5f-f2225695b948) by rawpixel.com on Freepik
+- [Illustration: Romania Flag](https://www.freepik.com/free-vector/illustration-romania-flag_2922499.htm#query=flags&position=13&from_view=author&uuid=f27babde-8a24-4394-8f60-a99fcdf280d7) by rawpixel.com on Freepik
+- [Illustration: Switzerland Flag](https://www.freepik.com/free-vector/illustration-switzerland-flag_2922486.htm#query=flags&position=18&from_view=author&uuid=f27babde-8a24-4394-8f60-a99fcdf280d7) by rawpixel.com on Freepik
+- [Illustration: Croatia Flag](https://www.freepik.com/free-vector/illustration-croatia-flag_2922525.htm#query=flags&position=20&from_view=author&uuid=f27babde-8a24-4394-8f60-a99fcdf280d7) by rawpixel.com on Freepik
+- [Illustration: Czech Republic Flag](https://www.freepik.com/free-vector/illustration-czech-republic-flag_2922495.htm#query=flags&position=23&from_view=author&uuid=f27babde-8a24-4394-8f60-a99fcdf280d7) by rawpixel.com on Freepik
+- [Illustration: Italy Flag](https://www.freepik.com/free-vector/illustration-italy-flag_2922484.htm#query=flags&position=28&from_view=author&uuid=f27babde-8a24-4394-8f60-a99fcdf280d7) by rawpixel.com on Freepik
+- [Illustration: Portugal Flag](https://www.freepik.com/free-vector/illustration-portugal-flag_2807795.htm#query=flags&position=25&from_view=author&uuid=b39fe788-b7a3-4df1-8df5-5d4ac6f2ce13) by rawpixel.com on Freepik
 
 ## Code 
 - The score area HTML, CSS, and JS code were written with the help of Code Institute's Love Maths project.
