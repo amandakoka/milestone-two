@@ -102,6 +102,10 @@ p#final-score {
 }
 
 /* Button Styling */
+button.btn {
+    color: #222;
+}
+
 .btn {
     background-color: #fff;
     font-weight: 500;
