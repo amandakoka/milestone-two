@@ -122,12 +122,14 @@ The quiz is designed to be fully responsive, ensuring an optimal experience acro
 - CSS: Applied for styling and layout, ensuring a visually cohesive and responsive design.
 - JavaScript: Implemented for interactive features and enhancing the user experience.
 ## Frameworks & Tools
-- Figma: Utilized for creating wireframes, providing a visual representation of the website's layout and design.
-- Google Fonts: Integrated to enhance the typography, offering a diverse range of fonts to elevate the visual aesthetics of the content.
-- Font Awesome: Incorporated for the inclusion of icons in the footer, contributing to a more visually appealing and informative user interface.
-- GitHub: Employed as a version control system and a collaborative platform for storing and managing the project's source code
-- Git: Utilized for version control, allowing seamless collaboration, tracking changes, and ensuring a well-documented development process. Commits and pushes to GitHub provide a clear history of project evolution.
-- EmailJS: Integrated for handling form submissions and facilitating email communication from the website.
+- [Figma](https://www.figma.com/): Utilized for creating wireframes, providing a visual representation of the website's layout and design.
+- [Google Fonts](https://fonts.google.com/): Integrated to enhance the typography, offering a diverse range of fonts to elevate the visual aesthetics of the content.
+- [Font Awesome](https://fontawesome.com/): Incorporated for the inclusion of icons in the footer, contributing to a more visually appealing and informative user interface.
+- [GitHub](https://github.com/): Employed as a version control system and a collaborative platform for storing and managing the project's source code
+- [Git](https://git-scm.com/): Utilized for version control, allowing seamless collaboration, tracking changes, and ensuring a well-documented development process. Commits and pushes to GitHub provide a clear history of project evolution.
+- [EmailJS](https://www.emailjs.com/): Integrated for handling form submissions and facilitating email communication from the website.
+- [Pixelied](https://pixelied.com/convert/png-converter/png-to-webp): Convert png image to webp.
+- [TinyPNG](https://tinypng.com/): Compress webp image.
 ## EmailJS
 I used EmailJS which allows users to send emails. 
 To do this:
