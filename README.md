@@ -89,9 +89,14 @@ The website is structured in a user-friendly and easy-to-use way and designed wi
 - Upon entering the website, users are greeted with a welcome message and a "Start Quiz" button.
 - Clicking the "Start Quiz" button leads users to the actual quiz, where there's a series of flag images to identify.
 - The layout prioritizes ease of navigation, allowing users to focus on the challenge of guessing flags.
+- There are 10 questions for users to have a go at with 4 buttons to choose from.
+- Once the user choses and answer they find out if they got it correct and a next button appears to go onto the next question.
+- When the user finishes the quiz a score page appears with their score and a play again button appears so users can play again. The flags chaneg order each time the quiz is played.
 2. Contact us page(where users can contact with any concerns/questions)
 - A separate "Contact Us" page is available for users to reach out with concerns or questions located in the footer.
 - The contact form enables easy communication and provides users with a platform to leave feedback.
+- The user has to fill out all sections to send an email successfully. The send button changes text and "message sent successfully" appears when the email has been sent.
+- There is also a "return to game" button so users can go back to the quiz.
 
 ## Wireframes 
 * [Home page](documentation/wireframes/wireframe.png)
@@ -155,7 +160,7 @@ The website is structured in a user-friendly and easy-to-use way and designed wi
 </details>
 
 ### Contact Form:
-- A contact form is available on the "Contact Us" page, enabling users to reach out to the site owner with any concerns or feedback.
+- A contact us link is provided in the footer. When clicked a contact form is available on the "Contact Us" page, enabling users to reach out to the site owner with any concerns or feedback.
 <details>
 <summary>Screenshots</summary>
 <br>
