@@ -1,8 +1,3 @@
-/**
- * Code written with the help of EmailJS tutorials and a YouTube tutorial
- * linked in my credits section of my README file
- */
-
 // Selecting HTML elements
 const contactForm = document.querySelector("#contact-form");
 const submitBtn = document.querySelector(".submit-btn");
