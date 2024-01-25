@@ -30,7 +30,8 @@
     4. [Performance](#performance)  
     5. [Device testing](#device-testing) 
     6. [Browser testing](#browser-testing) 
-    7. [Testing user stories](#testing-user-stories) 
+    7. [Bugs while testing devices, broswers](#bugs-while-testing-browser-and-devices)
+    8. [Testing user stories](#testing-user-stories) 
 7. [Bugs](#bugs) 
 8. [Deployment](#deployment)
 9. [Credits](#credits) 
@@ -178,6 +179,7 @@ The W3C Jigsaw CSS validator was used to validate the CSS of the website. Both t
 
 ### JavaScript Validation
 
+
 ### Performance 
 For the performance of the website, Lighthouse and Chrome Developer Tools were used to test the peformance of the website.
 #### First Performance Test:
@@ -216,6 +218,12 @@ The website was testes on the following browsers:
 - Google Chrome
 - Safari
 - Firefox
+
+### Bugs while testing browser and devices
+| **Bug** | **Fix** |
+| ----------- | ----------- |
+|[Button Text Bug](documentation/bugs/button-text-bug.png) 
+In mobile and tablet view the text in the quiz buttons were blue in all browsers I tested | Added a css style to the text in the buttons so they were black. |
 
 ### Testing user stories
 1. As a user, I want to know what the right flag is in case I dont pick correctly.
