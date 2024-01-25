@@ -1,6 +1,8 @@
 # World Flags Quiz
 [View website here](https://amandakoka.github.io/milestone-two/)
 
+![Website on different views](documentation/websiteviews.png)
+
 ## Table of Content
 
 1. [Project Goals](#project-goals)
