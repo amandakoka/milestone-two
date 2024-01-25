@@ -213,7 +213,7 @@ The website was tested on the following devices:
 In addition, the website was tested using google chrome developer tools to ensure the responsiveness on different screen sizes by pressing all device options.
 
 ### Browser testing
-The website was testes on the following browsers:
+The website was tested on the following browsers:
 
 - Google Chrome
 - Safari
@@ -367,4 +367,4 @@ You can clone the repository by following these steps:
 - The footer HTML and CSS code were reused and modified from my [previous project](https://github.com/amandakoka/autismawareness).
 - The contact form HTML and CSS were reused and modified from my [previous project](https://github.com/amandakoka/autismawareness).
 - The contact form's JS code was written with the help of the [EmailJs tutorials](https://www.emailjs.com/docs/tutorial/creating-contact-form/) and a [YouTube tutorial](https://youtu.be/qxWDVRyc95E?si=rJUAMLa7AzZuczgo).
-
+- The code to shuffle the array of questions was written with the help of [GeeksForGeeks](https://www.geeksforgeeks.org/how-to-shuffle-an-array-using-javascript/amp/)
