@@ -98,22 +98,76 @@ The website is structured in a user-friendly and easy-to-use way and designed wi
 # Features 
 ### Start Screen
 - Welcomes the user and has the "start quiz" button to start the quiz.
+<details>
+<summary>Screenshots</summary>
+<br>
+<img src="documentation/features/startscreen-feature.png">
+</details>
+
 ### Quiz Buttons (Interactive Color Change)
 - Quiz buttons undergo a dynamic color change on user interaction, providing instant visual feedback. The hover effect transforms the background and text color of the buttons.
+<details>
+<summary>Screenshots</summary>
+<br>
+<img src="documentation/features/quizbutton-feature.png">
+</details>
+
 ### Message Container(Instant Feedback)
 - The message container offers immediate feedback to users based on their quiz performance. Clearly communicates whether the user got the answer correct or incorrect.
+<details>
+<summary>Screenshots</summary>
+<br>
+<img src="documentation/features/msgcontainer-feature.png">
+</details>
+
 ### Timer
 - Users are timed on how long they take to complete the quiz, allowing them to experience and engaging game.
+<details>
+<summary>Screenshots</summary>
+<br>
+<img src="documentation/features/tpbscores-features.png">
+</details>
+
 ### Progress Bar
 - The progress bar visually represents the user's progress through the quiz. Changes in the bar provide users with a clear visual indicator of their progress within the quiz.
+<details>
+<summary>Screenshots</summary>
+<br>
+<img src="documentation/features/tpbscores-features.png">
+</details>
+
 ### Incorrect and Correct Scores
 - Scores for correct and incorrect answers are dynamically updated in real-time during the quiz. The background colors (red for incorrect, green for correct), enhance the user experience and aid comprehension.
+<details>
+<summary>Screenshots</summary>
+<br>
+<img src="documentation/features/tpbscores-features.png">
+</details>
+
 ### Final Score 
 - At the end of the quiz users receive a comprehensive final score, including the breakdown of correct and incorrect answers.
+<details>
+<summary>Screenshots</summary>
+<br>
+<img src="documentation/features/finalscore-feature.png">
+</details>
+
 ### Contact Form:
 - A contact form is available on the "Contact Us" page, enabling users to reach out to the site owner with any concerns or feedback.
+<details>
+<summary>Screenshots</summary>
+<br>
+<img src="documentation/features/contactform-feature.png">
+</details>
+
 ### Social Media Links:
 Social media icons in the footer provide users with direct links to the site owner's social media profiles.
+<details>
+<summary>Screenshots</summary>
+<br>
+<img src="documentation/features/slinks-feature.png">
+</details>
+
 ### Responsive Design:
 The quiz is designed to be fully responsive, ensuring an optimal experience across various devices and screen sizes.
 
@@ -242,12 +296,13 @@ In mobile and tablet view the text in the quiz buttons and the next button were 
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Incorrect and correct scores | Answer quiz questions | Display real-time updates of correct and incorrect scores | Works as expected. Incorrect scores and correct scores are shown going through the quiz |
+| Incorrect and correct scores | Answer quiz questions | Display real-time updates of correct and incorrect scores | Works as expected. Incorrect scores and correct scores are shown going through the quiz and at the end. |
 
 <details>
 <summary>Screenshots</summary>
 <br>
 <img src="documentation/testing-user-stories/userstory2.png">
+<img src="documentation/testing-user-stories/userstoryy2.png">
 </details>
 
 3. As a user, I want to see how long I take guessing the flags.
