@@ -382,17 +382,17 @@ The images weren't appearing when the quiz was restarted and played again. | Upd
 # Deployment
 The World Flags Quiz project is deployed on GitHub Pages, providing a convenient way to showcase and access the quiz online. The following steps outline the deployment process:
 
-### GitHub Repository:
+1. GitHub Repository:
 The project is stored in a GitHub repository, ensuring version control and collaboration.
-### GitHub Pages:
+2. GitHub Pages:
 GitHub Pages is utilized for hosting the live version of the World Flags Quiz.
 Navigate to the "Settings" tab in the GitHub repository.
-### Source Branch:
+3. Source Branch:
 In the "Settings" tab, scroll down to the "GitHub Pages" section.
 Choose main from the branch menu. Select root from the folder menu and save. GitHub Pages will deploy the site.
-### Deployment:
+4. Deployment:
 After selecting the source branch, GitHub Pages will provide the URL where the live site is accessible.
-### Live Site URL:
+5. Live Site URL:
 The live version of the World Flags Quiz can be accessed at Your GitHub Pages URL.
 
 ## Local Deployment
