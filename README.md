@@ -24,9 +24,9 @@
     2. [Frameworks & Tools](#frameworks--tools)
     3. [EmailJS](#emailjs)
 6. [Testing](#testing)
-    1. [HTML Validation](#html-validaion) 
-    2. [CSS Validation](#css-validaion) 
-    3. [JavaScript Validation](#javascript-validaion) 
+    1. [HTML Validation](#html-validation) 
+    2. [CSS Validation](#css-validation) 
+    3. [JavaScript Validation](#javascript-validation) 
     4. [Performance](#performance)  
     5. [Device testing](#device-testing) 
     6. [Browser testing](#browser-testing) 
@@ -34,6 +34,8 @@
 7. [Bugs](#bugs) 
 8. [Deployment](#deployment)
 9. [Credits](#credits) 
+    1. [Media](#media)
+    2. [Code](#code)
 
 # Project Goals 
 The world flags quiz is a a classic flag guessing game to test users knowledge on flags and a fun educational game to play!
@@ -175,10 +177,43 @@ The W3C Jigsaw CSS validator was used to validate the CSS of the website. Both t
 ### JavaScript Validation
 
 ### Performance 
+For the performance of the website, Lighthouse and Chrome Developer Tools were used to test the peformance of the website.
+#### First Performance Test:
+- **Home Page:**
+  - Initial Performance: [Before Fix](documentation/performance/initial-hp-lighthouse.png)
+  - Issue: Header image element too large.
+  - Issue 2: Google Fonts link in html.
+  - Fix: Converted my header png into a webp and compressed the image. Imported the google fonts url in my CSS.
+
+- **Contact Page:**
+  - Initial Performance: [Before Fix](documentation/performance/initial-cp-lighthouse.png)
+    - Issue 1: Header image element too large.
+    - Issue 2: Google Fonts link in html.
+  - Fix: Converted my header png into a webp and compressed the image. Imported the google fonts url in my CSS.
+
+#### Final Performance Test:
+- **Home Page:**
+  - [After Fix](documentation/html-validation/html.png)
+
+- **Contact Page:**
+  - [After Fix](documentation/html-validation/contact-val-html2.png)
 
 ### Device testing
+The website was tested on the following devices: 
+
+- MacBook air 13 inch
+- Ipad 7th Gen
+- Iphone 12
+- Iphone 12 mini 
+
+In addition, the website was tested using google chrome developer tools to ensure the responsiveness on different screen sizes by pressing all device options.
 
 ### Browser testing
+The website was testes on the following browsers:
+
+- Google Chrome
+- Safari
+- Firefox
 
 ### Testing user stories
 1. As a user, I want to know what the right flag is in case I dont pick correctly.
@@ -302,7 +337,7 @@ You can fork the World flags Quiz repositry by following these steps:
 2. Find the repository for this website.
 3. Click the fork button in the top right corner.
 
-You can clone the repositry by following these steps:
+You can clone the repository by following these steps:
 
 1. Log in or signup to Github.
 2. Find the repository for this website, autismawareness.
