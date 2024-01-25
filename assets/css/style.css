@@ -102,6 +102,7 @@ p#final-score {
 }
 
 /* Button Styling */
+button#nextbtn,
 button.btn {
     color: #222;
 }
