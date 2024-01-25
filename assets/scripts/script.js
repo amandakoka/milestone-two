@@ -44,7 +44,52 @@ const questions = [
             { text: "Portugal", correct: true},
             { text: "Mexico", correct: false},
         ]
-    }
+    },
+    {
+        question: "assets/img/france.png",
+        answers: [
+            { text: "Belgium", correct: false},
+            { text: "France", correct: true},
+            { text: "Netherlands", correct: false},
+            { text: "Russia", correct: false},
+        ]
+    },
+    {
+        question: "assets/img/denmark.png",
+        answers: [
+            { text: "Canada", correct: false},
+            { text: "France", correct: false},
+            { text: "Austria", correct: false},
+            { text: "Denmark", correct: true},
+        ]
+    },
+    {
+        question: "assets/img/hungary.png",
+        answers: [
+            { text: "Hungary", correct: true},
+            { text: "Bulgaria", correct: false},
+            { text: "Iran", correct: false},
+            { text: "Italy", correct: false},
+        ]
+    },
+    {
+        question: "assets/img/sweden.png",
+        answers: [
+            { text: "Ukraine", correct: false},
+            { text: "Bulgaria", correct: false},
+            { text: "Sweden", correct: true},
+            { text: "Iceland", correct: false},
+        ]
+    },
+    {
+        question: "assets/img/italy.png",
+        answers: [
+            { text: "Italy", correct: true},
+            { text: "Jordan", correct: false},
+            { text: "Hungary", correct: false},
+            { text: "Germany", correct: false},
+        ]
+    },
 ];
 
 // DOM Elements 
