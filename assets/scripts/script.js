@@ -113,6 +113,20 @@ let timerSeconds = 0;
 let timerInterval;
 
 /**
+ * @function shuffleArray
+ * Shuffles the elements of the array.
+ * @param {Array} array - The array to be shuffled.
+ * @returns {Array} - The shuffled array.
+ */
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+
+/**
  * @function startQuiz
  * Initializes the quiz by showing the start screen and starting the timer.
  */
@@ -180,6 +194,9 @@ function restartQuiz() {
 
     // Call startTimer to initiate a new timer
     startTimer();
+
+    // Shuffle the questions array
+    shuffleArray(questions);
 
     showQuestion();
     updateProgressBar();
@@ -293,7 +310,7 @@ function showScore() {
     updateTimerDisplay();
 
     const finalScoreElement = document.getElementById("final-score");
-    finalScoreElement.textContent = `Your final score: ${correctScore} correct and ${incorrectScore} incorrect`;
+    finalScoreElement.textContent = `Your final score: ${correctScore} / ${questions.length} questions, you got ${correctScore} correct and ${incorrectScore} incorrect.`;
     
     // Update progress bar to 100 when showing the final score
     const progressBar = document.getElementById("progress-bar");
