@@ -83,7 +83,7 @@ All flag images used in the World Flags Quiz are from freepik.com by rawpixel.co
 ## Fonts
 Choosing the right font is important to maintaining the overall simplicity and cleanliness of the design. I opted for the Lato font from Google Fonts for its clean and modern aesthetic. This font enhances the readability of the quiz content, ensuring that users can easily comprehend text instructions, flag names, and any additional information provided during the quiz.
 ## Structure 
-The website is structured in a user-friendly and easy-to-use way and designed with a simple and clean layout to ensure an immersive, distraction-free experience. The webiste consists of 2 pages:
+The website is structured in a user-friendly and easy-to-use way and designed with a simple and clean layout to ensure an immersive, distraction-free experience. The website consists of 2 pages:
 
 1. Homepage(The Quiz):
 - Upon entering the website, users are greeted with a welcome message and a "Start Quiz" button.
@@ -240,6 +240,77 @@ The W3C Jigsaw CSS validator was used to validate the CSS of the website. Both t
 
 ### JavaScript Validation
 
+Google Chrome developer tools were used throughout to test JavaScript.
+
+#### Console Output:
+1. Insert "console.log" statements at different points in my JavaScript code when something wasn't working or I was testing to see if there were any errors.
+2. Opened my website in my browser and accessed developer tools by selecting inspect.
+   - Checked the "console" tab for any logs or error messages outputted by my JavaScript code.
+3. All console logs were shown, and no error messages were found.
+
+#### Manual Testing:
+
+#### 1. Start the Quiz:
+   - **Action:** Clicked the "Start Quiz" button.
+   - **Expected Results:**
+     - The quiz screen should be displayed.
+     - The timer should start counting up.
+   - **Verifications:**
+     - Confirmed the display of the quiz screen.
+     - Checked the accurate initiation of the timer.
+
+#### 2. Answer Questions:
+   - **Actions:**
+     - Clicked on each answer for a question.
+   - **Expected Results:**
+     - The selected answer should be visually highlighted.
+     - A correct/incorrect message should be displayed.
+     - The correct and incorrect scores should be updated accordingly.
+   - **Verifications:**
+     - Checked the correct highlighting of the selected answer.
+     - Verified the display of correct/incorrect messages.
+     - Confirmed the accurate update of the correct and incorrect scores.
+
+#### 3. Navigation:
+   - **Actions:**
+     - Clicked the "Next" button after answering each question.
+   - **Expected Results:**
+     - The next question should be displayed.
+     - The progress bar should be accurately updated.
+   - **Verifications:**
+     - Ensured the display of the next question.
+     - Validated the accurate update of the progress bar.
+
+#### 4. Timer Functionality:
+   - **Observations:**
+     - Monitored the timer while answering questions.
+   - **Expected Results:**
+     - The timer should increment correctly.
+     - The timer should stop when the quiz is completed.
+   - **Verifications:**
+     - Ensured correct and continuous timer incrementation.
+     - Confirmed the timer stops when the quiz is completed.
+
+#### 5. Restart Quiz:
+   - **Action:** Clicked the "Play again!" button after completing the quiz.
+   - **Expected Results:**
+     - The quiz should reset.
+     - The first question should be displayed and must be a different order.
+     - Scores (correct and incorrect) should be reset.
+   - **Verifications:**
+     - Verified the successful reset of the quiz.
+     - Confirmed the display of the first question and different order.
+     - Checked and confirmed the reset of scores.
+
+#### 6. Quiz Completion:
+   - **Actions:**
+     - Answered all questions and completed the quiz.
+   - **Expected Results:**
+     - The final score should be displayed.
+     - The "Play again!" button should appear.
+   - **Verifications:**
+     - Validated the display of the final score.
+     - Checked and confirmed the appearance of the "Play again!" button.
 
 ### Performance 
 For the performance of the website, Lighthouse and Chrome Developer Tools were used to test the peformance of the website.
