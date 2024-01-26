@@ -312,6 +312,16 @@ Google Chrome developer tools were used throughout to test JavaScript.
      - Validated the display of the final score.
      - Checked and confirmed the appearance of the "Play again!" button.
 
+#### 7. Contact Form:
+   - **Actions:**
+     - Send an email.
+   - **Expected Results:**
+     - Site owner recieves the email.
+     - Buttons text should change to "message successfuly sent" if email sent successfully.
+   - **Verifications:**
+     - Validated the display of the change in text of send button.
+     - Checked and confirmed email sent successfully.
+
 ### Performance 
 For the performance of the website, Lighthouse and Chrome Developer Tools were used to test the peformance of the website.
 #### First Performance Test:
