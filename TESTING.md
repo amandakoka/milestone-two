@@ -11,7 +11,7 @@
 9. [Testing User Stories](#testing-user-stories)
 10. [Bugs](#bugs)
 
-### HTML Validation 
+## HTML Validation 
 The W3C validator was used to validate the HTML on all pages.
 
 #### First Validation Test:
@@ -33,14 +33,14 @@ The W3C validator was used to validate the HTML on all pages.
 - **Contact Page:**
   - [After Fix](documentation/html-validation/contact-val-html2.png)
 
-### CSS Validation
+## CSS Validation
 
 The W3C Jigsaw CSS validator was used to validate the CSS of the website. Both tests passed with no errors.
 
 - [Full Page](documentation/css-validation/cssvalwebsite.png) 
 - [Style.css File](documentation/css-validation/cssvalfile.png)
 
-### JavaScript Validation
+## JavaScript Validation
 
 Google Chrome developer tools were used throughout to test JavaScript.
 
@@ -50,7 +50,7 @@ Google Chrome developer tools were used throughout to test JavaScript.
    - Checked the "console" tab for any logs or error messages outputted by my JavaScript code.
 3. All console logs were shown, and no error messages were found.
 
-### Manual Testing:
+## Manual Testing:
 
 #### 1. Start the Quiz:
    - **Action:** Clicked the "Start Quiz" button.
@@ -124,7 +124,7 @@ Google Chrome developer tools were used throughout to test JavaScript.
      - Validated the display of the change in text of send button.
      - Checked and confirmed email sent successfully.
 
-### Performance 
+## Performance 
 For the performance of the website, Lighthouse and Chrome Developer Tools were used to test the peformance of the website.
 #### First Performance Test:
 - **Home Page:**
@@ -146,7 +146,7 @@ For the performance of the website, Lighthouse and Chrome Developer Tools were u
 - **Contact Page:**
   - [After Fix](documentation/html-validation/contact-val-html2.png)
 
-### Device testing
+## Device testing
 The website was tested on the following devices: 
 
 - MacBook air 13 inch
@@ -156,20 +156,20 @@ The website was tested on the following devices:
 
 In addition, the website was tested using google chrome developer tools to ensure the responsiveness on different screen sizes by pressing all device options.
 
-### Browser testing
+## Browser testing
 The website was tested on the following browsers:
 
 - Google Chrome
 - Safari
 - Firefox
 
-### Bugs while testing browser and devices
+## Bugs while testing browser and devices
 | **Bug** | **Fix** |
 | ----------- | ----------- |
 |[Button Text Bug](documentation/bugs/button-text-bug.png) 
 In mobile and tablet view the text in the quiz buttons and the next button were blue in all browsers I tested | Added a css style to the text in the buttons so they were black. |
 
-### Testing user stories
+## Testing user stories
 1. As a user, I want to know what the right flag is in case I dont pick correctly.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
@@ -247,7 +247,7 @@ In mobile and tablet view the text in the quiz buttons and the next button were 
 <img src="documentation/testing-user-stories/userstoryy6.png">
 </details>
 
-# Bugs 
+## Bugs 
 | **Bug** | **Fix** |
 | ----------- | ----------- |
 | [Button bug](documentation/bugs/buttonbug.png) 
