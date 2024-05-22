@@ -13,6 +13,7 @@
     2. [User Requirements and Expectations](#user-requirements-and-expectations)
     3. [User Stories](#user-stories)
     4. [Site Owner Stories](#site-owner-stories)
+    5. [Rationale For Development](#rationale-for-development)
 3. [Design](#design)
     1. [Design Choices](#design-choices)
     2. [Images](#images)
@@ -72,6 +73,58 @@ The World Flags Quiz is designed to cater to a diverse audience, making it an id
 2. As a site owner, I want users to find us on social media. 
 3. As a site owner, I want all users to be able to play the quiz easily.
 
+## Rationale for Development
+
+### Purpose
+The World Flags Quiz was conceived and developed with the primary purpose of providing an engaging and educational experience centered around world flags. The project aims to serve as an interactive tool that enhances users' knowledge of flags from different countries in a fun and accessible manner. By combining elements of gaming with educational content, the quiz seeks to make learning about world flags enjoyable for users of all ages, particularly targeting primary school teachers, students aged 7-12, parents, and flag enthusiasts.
+
+### User Needs
+The development of the World Flags Quiz addresses several key user needs:
+
+1. **Educational Engagement**: There is a need for educational tools that can engage students in learning outside the traditional classroom setting. The quiz provides an interactive way for primary school teachers to supplement their geography lessons, making it easier for students to learn and remember country flags.
+
+2. **Family Engagement**: Parents are often looking for educational activities that they can enjoy with their children at home. The World Flags Quiz offers a family-friendly environment where parents and their children can play together while learning about world flags.
+
+3. **Entertainment and Learning**: Users, especially those interested in geography and flags, seek fun and educational games that challenge their knowledge. The quiz offers a gamified approach to learning about world flags, enhancing engagement through interactive gameplay and immediate feedback.
+
+4. **Accessibility and Ease of Use**: The quiz is designed to be accessible and easy to use for users of all ages and technical abilities. It features a simple and intuitive user interface, ensuring that users can navigate the quiz, answer questions, and receive feedback without difficulty.
+
+### Target Audience
+The World Flags Quiz is designed to cater to a diverse audience, including:
+
+- **Primary School Teachers**: To use as an educational tool in geography lessons, promoting interactive learning through quizzes.
+  
+- **Students (Aged 7-12)**: To make learning about world flags enjoyable and engaging, encouraging self-paced exploration and knowledge retention.
+  
+- **Parents**: To help their children learn about world geography in a fun and interactive way, fostering family engagement in educational activities.
+  
+- **Flag Enthusiasts**: Anyone with an interest in flags and geography, looking for a challenging and entertaining quiz experience.
+  
+- **General Public**: People looking for a quick and fun game to play, testing their knowledge of world flags in a relaxed setting.
+
+### User Stories
+The development of the World Flags Quiz is guided by specific user stories, ensuring that the project meets the needs and expectations of its target audience:
+
+1. **As a user, I want to test my knowledge on world flags.**
+   - The quiz provides a platform for users to challenge themselves and learn about flags from different countries.
+
+2. **As a user, I want to know what the right flag is in case I don't pick correctly.**
+   - Immediate feedback is provided to users, indicating whether their answer is correct or incorrect.
+
+3. **As a user, I want to see how many flags I have got correct and incorrect.**
+   - Users can track their progress and see their score based on the number of flags they have guessed correctly.
+
+4. **As a user, I want to see how long I take guessing the flags.**
+   - The quiz includes a timer feature, allowing users to see how quickly they can identify each flag.
+
+5. **As a user, I want to receive feedback when I get an answer correct or incorrect.**
+   - Feedback is provided instantly to users, enhancing the learning experience and encouraging further engagement.
+
+### Conclusion
+In conclusion, the development of the World Flags Quiz aims to provide an engaging and educational experience for users interested in world flags. By addressing the needs of primary school teachers, students, parents, and flag enthusiasts, the project aims to promote interactive learning and family engagement through an accessible and entertaining quiz format. The quiz's user-centric design, including intuitive navigation, immediate feedback, and responsive functionality, ensures a seamless and enjoyable experience for users across different devices and skill levels.
+
+The project's well-defined purpose, clear user stories, and consideration of user needs and expectations contribute to its overall success as an educational tool and a fun, challenging game. Through continuous improvement and user feedback, the World Flags Quiz will evolve to better serve its audience and maintain its position as a valuable resource for learning about world flags in an engaging and interactive way.
+
 # Design 
 ## Design Choices 
 The World Flags quiz prioritizes a simple and clean layout to ensure users can immerse themselves in the quiz without unnecessary distractions. The primary goal is to create an engaging environment where users can focus on the challenge of identifying flags. By using a straightforward design, users can navigate effortlessly and concentrate on the quiz content. This design promotes accessibility and inclusivity, allowing a diverse audience to enjoy the game without complications.
@@ -84,32 +137,46 @@ All flag images used in the World Flags Quiz are from freepik.com by rawpixel.co
 ## Fonts
 Choosing the right font is important to maintaining the overall simplicity and cleanliness of the design. I opted for the Lato font from Google Fonts for its clean and modern aesthetic. This font enhances the readability of the quiz content, ensuring that users can easily comprehend text instructions, flag names, and any additional information provided during the quiz.
 ## Structure 
-The website is structured in a user-friendly and easy-to-use way and designed with a simple and clean layout to ensure an immersive, distraction-free experience. The website consists of 2 pages:
+The website is structured in a user-friendly and easy-to-use way and designed with a simple and clean layout to ensure an immersive, distraction-free experience. The website consists of 3 pages:
 
-1. Homepage(The Quiz):
-- Upon entering the website, users are greeted with a welcome message and a "Start Quiz" button.
+1. **Homepage(The Quiz)**:
+- Upon entering the website, users are greeted with a welcome message and an "Instructions" and "Start Quiz" button.
 - Clicking the "Start Quiz" button leads users to the actual quiz, where there's a series of flag images to identify.
 - The layout prioritizes ease of navigation, allowing users to focus on the challenge of guessing flags.
 - There are 10 questions for users to have a go at with 4 buttons to choose from.
 - Once the user choses and answer they find out if they got it correct and a next button appears to go onto the next question.
 - When the user finishes the quiz a score page appears with their score and a play again button appears so users can play again. The flags chaneg order each time the quiz is played.
-2. Contact us page(where users can contact with any concerns/questions)
+2. **Instructions page**:
+- Once the instructions button had been pressed, users are redirected to a intrusctions page where there is list of instructions on how to play the quiz.
+- When the user has read the instructions and know how to play, they can press the button that takes them back to the home page so they start the quiz.
+3. **Contact us page(where users can contact with any concerns/questions)**:
 - A separate "Contact Us" page is available for users to reach out with concerns or questions located in the footer.
 - The contact form enables easy communication and provides users with a platform to leave feedback.
 - The user has to fill out all sections to send an email successfully. The send button changes text and "message sent successfully" appears when the email has been sent.
 - There is also a "return to game" button so users can go back to the quiz.
 
+[Structure Flowchart](documentation/flowchart.png)
+
 ## Wireframes 
 * [Home page](documentation/wireframes/wireframe.png)
+* [Instructions page](documentation/wireframes/instructionswireframe.png)
 * [Contact us page](documentation/wireframes/contactwireframe.png)
 
 # Features 
 ### Start Screen
-- Welcomes the user and has the "start quiz" button to start the quiz.
+- Welcomes the user and has the "start quiz" button to start the quiz and "instructions" button that redirects to intstructions page.
 <details>
 <summary>Screenshots</summary>
 <br>
 <img src="documentation/features/startscreen-feature.png">
+</details>
+
+### Instructions Page
+- Explains to the user how the quiz is played and has a "back" button that redirects to start screen so once the user is familiar they can play.
+<details>
+<summary>Screenshots</summary>
+<br>
+<img src="documentation/features/intrsuctionsfeature.png">
 </details>
 
 ### Quiz Buttons (Interactive Color Change)
