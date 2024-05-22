@@ -26,14 +26,6 @@
     2. [Frameworks & Tools](#frameworks--tools)
     3. [EmailJS](#emailjs)
 6. [Testing](#testing)
-    1. [HTML Validation](#html-validation) 
-    2. [CSS Validation](#css-validation) 
-    3. [JavaScript Validation](#javascript-validation) 
-    4. [Performance](#performance)  
-    5. [Device testing](#device-testing) 
-    6. [Browser testing](#browser-testing) 
-    7. [Bugs while testing devices, broswers](#bugs-while-testing-browser-and-devices)
-    8. [Testing user stories](#testing-user-stories) 
 7. [Bugs](#bugs) 
 8. [Deployment](#deployment)
 9. [Credits](#credits) 
@@ -41,31 +33,40 @@
     2. [Code](#code)
 
 # Project Goals 
-The world flags quiz is a a classic flag guessing game to test users knowledge on flags and a fun educational game to play!
+The World Flags Quiz is a classic flag guessing game designed to test users' knowledge of flags and provide a fun educational experience.
+
 ## User Goals 
 * Play a fun and engaging world flag guessing game. 
-* Test your knowledge by guessing the flags name. 
+* Test your knowledge by guessing the flags' names. 
+
 ## Site Owner Goals 
-* Create a fun and engaging game that users will want to play over and over again.
-* The quiz should be interactive and fully responsive to be able to be played on different devices.
+* Create a fun and engaging game that users will want to play repeatedly.
+* Ensure the quiz is interactive and fully responsive to be played on different devices.
 
 # User Experience 
 ## Target Audience 
-* Students who need to test their knowledge.
+* Primary School Teachers: To use as an educational tool in geography lessons.
+* Students: Particularly those aged 7-12, to make learning about world flags enjoyable.
+* Parents: To help their children learn about world geography in a fun way.
 * People looking for a fun, quick game to play.
-* Anyone with an interest with flags and guessing games.
+* Anyone with an interest in flags and guessing games.
+
+The World Flags Quiz is designed to cater to a diverse audience, making it an ideal educational tool for primary school teachers, students, parents, and geography enthusiasts. Primary school teachers can incorporate the quiz into their geography lessons, providing a fun and interactive way for students to learn about world flags. Students, particularly those aged 7-12, will find the game engaging and educational, helping them to improve their knowledge of world geography in an enjoyable manner. Parents can use the quiz as a supplemental learning activity at home, making education a fun family activity. Additionally, individuals with a keen interest in flags and quick, entertaining games will find the quiz challenging and enjoyable. The website's simple, intuitive navigation, responsive design, and interactive features ensure it meets the needs of all users, providing a seamless and engaging experience across different devices.
+
 ## User Requirements and Expectations 
 * A simple, intuitive navigation system.
 * Quick, easy, fun game to play.
 * Links and buttons to work as expected.
 * Accessibility 
 * Easy way to leave feedback 
+
 ## User Stories 
 1. As a user, I want to test my knowledge on world flags.
 2. As a user, I want to know what the right flag is in case I don't pick correctly.
 3. As a user, I want to see how many flags I have got correct and incorrect.
 4. As a user, I want to see how long I take guessing the flags.
 5. As a user, I want to receive feedback when I get an answer correct or incorrect.
+
 ## Site Owner Stories 
 1. As a site owner, I want users to be able to contact us and leave any feedback.
 2. As a site owner, I want users to find us on social media. 
