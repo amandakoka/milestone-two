@@ -15,12 +15,13 @@
     4. [Site Owner Stories](#site-owner-stories)
     5. [Rationale For Development](#rationale-for-development)
 3. [Design](#design)
-    1. [Design Choices](#design-choices)
-    2. [Images](#images)
-    3. [Colour](#colours)
-    4. [Fonts](#fonts)
-    5. [Structure](#structure)
-    6. [Wireframes](#wireframes)
+    1. [Process](#process)
+    2. [Design Choices](#design-choices)
+    3. [Images](#images)
+    4. [Colour](#colours)
+    5. [Fonts](#fonts)
+    6. [Structure](#structure)
+    7. [Wireframes](#wireframes)
 4. [Features](#features)
 5. [Technologies Used](#technologies-used)
     1. [Languages](#languages)
@@ -125,35 +126,79 @@ In conclusion, the development of the World Flags Quiz aims to provide an engagi
 
 The project's well-defined purpose, clear user stories, and consideration of user needs and expectations contribute to its overall success as an educational tool and a fun, challenging game. Through continuous improvement and user feedback, the World Flags Quiz will evolve to better serve its audience and maintain its position as a valuable resource for learning about world flags in an engaging and interactive way.
 
-# Design 
+# Design
+
+## Process
+
+### User Research and Goals
+User research focused on understanding user preferences for an educational quiz. Interviews with parents of children and children were conducted to gather insights into user expectations and ensure the quiz meets their educational and engagement needs.
+
+### Design Process
+The design process followed a structured approach:
+- **Ideation**: Brainstorming and conceptualizing design ideas to align with user preferences.
+- **Prototyping**: Creating wireframes and mock-ups using Figma to visualize the user interface.
+- **Testing**: Conducting usability testing sessions to gather feedback and iterate on design improvements.
+- **Iteration**: Making iterative improvements based on user feedback to enhance usability and functionality.
+
+### Accessibility
+Accessibility considerations were integrated into the design:
+- **Color Contrast**: Ensuring sufficient contrast between text and background colors for readability.
+- **Font Sizes**: Using appropriate font sizes to accommodate users with visual impairments.
+
+### Interaction Design
+Interactive elements were designed to enhance engagement and usability:
+- **Dynamic Feedback**: Providing instant visual feedback on user interactions, such as quiz button color changes and progress indicators.
+- **Intuitive Navigation**: Simplifying navigation flows to ensure users can easily progress through the quiz.
+
+### Visual Design
+Visual design focused on creating a clean, engaging, and usable interface:
+- **Color Palette**: Choosing a cohesive color scheme that complements the quiz content and maintains visual harmony.
+- **Image Selection**: Curating high-quality flag images to enhance the educational value and visual appeal of the quiz.
+
+### Technology and Tools
+The project utilized a range of tools and technologies:
+- **Design Tools**: Figma for wireframing, prototyping, and visual design.
+- **Front-end Development**: HTML, CSS, and JavaScript for implementing the quiz interface and ensuring compatibility across devices.
+
+### Challenges and Solutions
+The project encountered several challenges:
+- **Responsive Design**: Ensuring the quiz functions seamlessly on various screen sizes and orientations.
+- **Image Optimization**: Optimizing image loading times to improve performance without compromising visual quality.
+
+### Future Improvements
+Planned enhancements include:
+- **Enhanced Accessibility Features**: Adding support for screen readers and improving alternative text for images.
+
 ## Design Choices 
 The World Flags quiz prioritizes a simple and clean layout to ensure users can immerse themselves in the quiz without unnecessary distractions. The primary goal is to create an engaging environment where users can focus on the challenge of identifying flags. By using a straightforward design, users can navigate effortlessly and concentrate on the quiz content. This design promotes accessibility and inclusivity, allowing a diverse audience to enjoy the game without complications.
-## Colour 
+### Colour 
 The color palette for the website was carefully chosen to coordinate with the grey header image. To maintain visual coherence, a color picker tool was employed to extract a suitable grey shade from the header image. This approach makes sure that the colors blend smoothly across the entire website.The deliberate use of a simple color scheme aims to facilitate a smooth user experience, minimizing potential distractions and enabling users to concentrate on the vibrant colors of the flags displayed in the quiz.
 - [Header Image](documentation/background.png)
 - [Colour picker image](documentation/colourpicker.png)
-## Images 
+### Images 
 All flag images used in the World Flags Quiz are from freepik.com by rawpixel.com. Proper credit has been attributed to rawpixel.com in the "Credits" section. These images not only contribute to the visual appeal of the quiz but also align with its educational and engaging nature. They enhance the overall aesthetic, allowing users to explore and identify flags from around the world, thereby enriching the quiz experience.
-## Fonts
+### Fonts
 Choosing the right font is important to maintaining the overall simplicity and cleanliness of the design. I opted for the Lato font from Google Fonts for its clean and modern aesthetic. This font enhances the readability of the quiz content, ensuring that users can easily comprehend text instructions, flag names, and any additional information provided during the quiz.
-## Structure 
+### Structure 
 The website is structured in a user-friendly and easy-to-use way and designed with a simple and clean layout to ensure an immersive, distraction-free experience. The website consists of 3 pages:
 
-1. **Homepage(The Quiz)**:
-- Upon entering the website, users are greeted with a welcome message and an "Instructions" and "Start Quiz" button.
-- Clicking the "Start Quiz" button leads users to the actual quiz, where there's a series of flag images to identify.
-- The layout prioritizes ease of navigation, allowing users to focus on the challenge of guessing flags.
-- There are 10 questions for users to have a go at with 4 buttons to choose from.
-- Once the user choses and answer they find out if they got it correct and a next button appears to go onto the next question.
-- When the user finishes the quiz a score page appears with their score and a play again button appears so users can play again. The flags chaneg order each time the quiz is played.
+1. **Homepage (The Quiz)**:
+   - Upon entering the website, users are greeted with a welcome message and an "Instructions" and "Start Quiz" button.
+   - Clicking the "Start Quiz" button leads users to the actual quiz, where there's a series of flag images to identify.
+   - The layout prioritizes ease of navigation, allowing users to focus on the challenge of guessing flags.
+   - There are 10 questions for users to have a go at with 4 buttons to choose from.
+   - Once the user chooses an answer they find out if they got it correct and a next button appears to go onto the next question.
+   - When the user finishes the quiz a score page appears with their score and a play again button appears so users can play again. The flags change order each time the quiz is played.
+   
 2. **Instructions page**:
-- Once the instructions button had been pressed, users are redirected to a intrusctions page where there is list of instructions on how to play the quiz.
-- When the user has read the instructions and know how to play, they can press the button that takes them back to the home page so they start the quiz.
-3. **Contact us page(where users can contact with any concerns/questions)**:
-- A separate "Contact Us" page is available for users to reach out with concerns or questions located in the footer.
-- The contact form enables easy communication and provides users with a platform to leave feedback.
-- The user has to fill out all sections to send an email successfully. The send button changes text and "message sent successfully" appears when the email has been sent.
-- There is also a "return to game" button so users can go back to the quiz.
+   - Once the instructions button had been pressed, users are redirected to an instructions page where there is a list of instructions on how to play the quiz.
+   - When the user has read the instructions and knows how to play, they can press the button that takes them back to the home page so they can start the quiz.
+
+3. **Contact us page (where users can contact with any concerns/questions)**:
+   - A separate "Contact Us" page is available for users to reach out with concerns or questions located in the footer.
+   - The contact form enables easy communication and provides users with a platform to leave feedback.
+   - The user has to fill out all sections to send an email successfully. The send button changes text and "message sent successfully" appears when the email has been sent.
+   - There is also a "return to game" button so users can go back to the quiz.
 
 [Structure Flowchart](documentation/flowchart.png)
 
