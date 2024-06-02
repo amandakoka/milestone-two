@@ -159,11 +159,44 @@ button.btn {
     background-color: red;
 }
 
+/* Styling for the Try Harder Quiz button */
+#harder-quiz-btn {
+    background-color: #fff;
+    color: #222;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: 1px solid #222;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    display: none; /* Hide by default */
+    margin: 20px auto 0;
+}
+
+#harder-quiz-btn:hover {
+    background-color: #222;
+    color: #fff;
+}
+
+#go-back-btn {
+    background-color: #fff;
+    color: #222;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: 1px solid #222;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    display: none; /* Hide by default */
+    margin: 20px auto 0;
+}
+
 /* Timer Styling */
 p#timer {
     padding-top: 0;
     font-size: 180%;
 }
+
 
 /* Progress Bar Styling */
 #progress-container {
