@@ -92,6 +92,56 @@ const questions = [
     },
 ];
 
+// Harder Quiz questions array
+const harderQuestions = [
+    {
+        question: "assets/img/harderflags/albaniaflag.png",
+        answers: [
+            { text: "Montenegro", correct: false},
+            { text: "Greece", correct: false},
+            { text: "Croatia", correct: false},
+            { text: "Albania", correct: true},
+        ]
+    },
+    {
+        question: "assets/img/harderflags/ecuadorflag.png",
+        answers: [
+            { text: "Ecuador", correct: true},
+            { text: "Africa", correct: false},
+            { text: "Hawaii", correct: false},
+            { text: "Canada", correct: false},
+        ]
+    },
+    {
+        question: "assets/img/harderflags/iranflag.png",
+        answers: [
+            { text: "Kazakstan", correct: false},
+            { text: "Dubai", correct: false},
+            { text: "Iran", correct: true},
+            { text: "Iraq", correct: false},
+        ]
+    },
+    {
+        question: "assets/img/harderflags/norwayflag.png",
+        answers: [
+            { text: "Denmark", correct: false},
+            { text: "Norway", correct: true},
+            { text: "Finland", correct: false},
+            { text: "Russia", correct: false},
+        ]
+    },
+    {
+        question: "assets/img/harderflags/somaliaflag.png",
+        answers: [
+            { text: "South Africa", correct: false},
+            { text: "Zimbabwe", correct: false},
+            { text: "Morocco", correct: false},
+            { text: "Somalia", correct: true},
+        ]
+    },
+    
+];
+
 // DOM Elements 
 const startScreen = document.getElementById("start-screen");
 const startButton = document.getElementById("start-btn");
@@ -104,6 +154,8 @@ const incorrectScoreElement = document.getElementById("incorrect");
 const messageContainer = document.getElementById("message-container");
 const timerContainer = document.getElementById("timer-container");
 const timerElement = document.getElementById("timer");
+const harderQuizButton = document.getElementById("harder-quiz-btn");
+const goBackButton = document.getElementById("go-back-btn");
 
 // Quiz State Variables
 let currentQuestionIndex = 0;
@@ -134,6 +186,38 @@ function startQuiz() {
     showStartScreen();
     // Event listener to transition to quiz content when "start quiz" button is clicked.
     startButton.addEventListener("click", startQuizContent);
+
+    // Event listener for Harder Quiz button
+    harderQuizButton.addEventListener("click", startHarderQuiz);
+    
+    // Event listener for "Go Back to Start Screen" button
+    goBackButton.addEventListener("click", goToStartScreen);
+}
+
+function startHarderQuiz() {
+    shuffleArray(harderQuestions);
+
+    // Reset quiz state
+    restartQuiz();
+
+    // Update the questions array with harder questions
+    questions.splice(0, questions.length, ...harderQuestions);
+
+    // Reset currentQuestionIndex to start from the first question
+    currentQuestionIndex = 0;
+
+    // Stop the timer
+    clearInterval(timerInterval);
+    timerSeconds = 0; // Reset timer seconds
+
+    // Start the quiz
+    startQuizContent();
+
+    // Hide the "Try Harder Quiz" button
+    harderQuizButton.style.display = "none";
+
+    // Hide go back button
+    goBackButton.style.display = "none";
 }
 
 /**
@@ -144,7 +228,6 @@ function showStartScreen() {
     startScreen.style.display = "block";
     quizContainer.style.display = "none";
 
-    //Event listener to transition to quiz content when "start quiz" button is clicked.
     startButton.addEventListener("click", startQuizContent);
 }
 
@@ -192,9 +275,6 @@ function restartQuiz() {
     timerSeconds = 0; // Reset timer seconds
     clearInterval(timerInterval);
 
-    // Call startTimer to initiate a new timer
-    startTimer();
-
     // Shuffle the questions array
     shuffleArray(questions);
 
@@ -212,6 +292,10 @@ function restartQuiz() {
     
     const headerElement = document.querySelector('.quiz h3');
     headerElement.style.display = 'block';
+
+    startButton.removeEventListener("click", startQuizContent);
+    
+    startTimer();
 }
 
 /**
@@ -235,6 +319,10 @@ function showQuestion() {
         }
         button.addEventListener("click", selectAnswer);
     });
+
+    // Hide the "Try Harder Quiz" and "Go Back" buttons
+    harderQuizButton.style.display = "none";
+    goBackButton.style.display = "none";
 }
 
 /**
@@ -295,10 +383,6 @@ function displayMessage(message) {
     messageContainer.textContent = message;
 }
 
-/**
- * @function showScore
- * Displays the final score, stops timer and controls the end-game behavior.
- */
 function showScore() {
     console.log("Final Score:", correctScore, incorrectScore);
     resetState();
@@ -319,6 +403,19 @@ function showScore() {
     // Hide question image element
     questionElement.style.display = "none";
 
+    // Show go back button only when the quiz is finished
+    if (currentQuestionIndex >= questions.length) {
+        const goBackButton = document.getElementById("go-back-btn");
+        goBackButton.style.display = "block";
+    }
+
+    // Display the "Try Harder Quiz" button only if the original quiz is finished
+    if (currentQuestionIndex >= questions.length) {
+        harderQuizButton.style.display = "block";
+    } else {
+        harderQuizButton.style.display = "none";
+    }
+
     // Checks if the currentQuestionIndex is equal to or greater than the number of questions, indicating that the game is finished
     // Removes header when game is finished.
     const headerElement = document.querySelector('.quiz h3');
@@ -327,6 +424,31 @@ function showScore() {
     } else {
         headerElement.style.display = 'block';
     }
+}
+
+/**
+ * @function goToStartScreen
+ * Redirects the user to the start screen and resets timer and scores.
+ */
+function goToStartScreen() {
+    // Stop the timer
+    clearInterval(timerInterval);
+    timerSeconds = 0;
+    updateTimerDisplay();
+
+    // Reset scores
+    correctScore = 0;
+    incorrectScore = 0;
+    correctScoreElement.textContent = "0";
+    incorrectScoreElement.textContent = "0";
+
+    // Show start screen
+    startScreen.style.display = "block";
+
+    // Hide score screen
+    quizContainer.style.display = "none";
+
+    startButton.addEventListener("click", startQuizContent);
 }
 
 /**
@@ -355,6 +477,11 @@ function handleNextButton() {
         updateProgressBar(); 
     } else {
         showScore();
+    }
+
+    // Hide the "Try Harder Quiz" button if the original quiz is not finished
+    if (currentQuestionIndex < questions.length) {
+        harderQuizButton.style.display = "none";
     }
 }
 
