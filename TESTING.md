@@ -10,6 +10,7 @@
 8. [Bugs While Testing Browser and Devices](#bugs-while-testing-browser-and-devices)
 9. [Testing User Stories](#testing-user-stories)
 10. [Bugs](#bugs)
+11. [Known Bugs](#known-bugs)
 
 ## HTML Validation 
 The W3C validator was used to validate the HTML on all pages.
@@ -268,3 +269,12 @@ The timer wasn't resetting to zero when the game restarted. The timer reset logi
 Image and alt text were showing on the score page. | Implemented a check within the "showScore" function to ensure that the image elements display is set to none. This prevents any lingering image or alt text from being displayed on the score page. |
 | [Image Bug 3](documentation/bugs/img3bug.png) 
 The images weren't appearing when the quiz was restarted and played again. | Updated the "resetState" function to explicitly set the display property of the image element display to block to ensure that the image is visible when the quiz is reset. This addresses the issue of images not appearing after restarting the quiz. |
+
+## Known Bugs 
+1. When the user completes the harder quiz questions and presses "Go Back to Start Screen", then starts the quiz again, the harder questions are displayed instead of the original questions. I am currently working on fixing this behavior to ensure that the original questions are displayed when starting the quiz after going back to the start screen.
+
+### Workaround
+Currently, the workaround for bug #1 is to refresh the page after pressing "Go Back to Start Screen" to reset the quiz state correctly.
+
+### In Progress
+I am actively working on a fix for bug #1 and will update the repository as soon as the issue is resolved.
