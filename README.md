@@ -272,6 +272,22 @@ The website is structured in a user-friendly and easy-to-use way and designed wi
 <img src="documentation/features/finalscore-feature.png">
 </details>
 
+### Harder Quiz Button
+- At the end of the quiz a button will appear where when users press they are shown a new and harder quiz they can complete.
+<details>
+<summary>Screenshots</summary>
+<br>
+<img src="documentation/features/">
+</details>
+
+### Back To Start Screen Button 
+- At the end of the quiz users are shown a back button which takes them back to the start screen where they can read the instructions again if needed.
+<details>
+<summary>Screenshots</summary>
+<br>
+<img src="documentation/features/">
+</details>
+
 ### Contact Form:
 - A contact us link is provided in the footer. When clicked a contact form is available on the "Contact Us" page, enabling users to reach out to the site owner with any concerns or feedback.
 <details>
